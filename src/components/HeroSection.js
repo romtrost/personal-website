@@ -1,16 +1,21 @@
 import React from 'react';
 import '../App.css';
 import './HeroSection.css';
+import Navbar from './Navbar';
 
 function HeroSection() {
   return (
-    <div className='hero-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
-      <h1>I am Romain Trost</h1>
-      <p>I am a professional Data Scienctist and Full Stack Developper. 
-         I enjoy working on diverse and challenging coding projects, and love 
-         researching and staying up to date with advancements in machine learning.</p>
+    <div className='hero'>
+      <img src='/images/header-background.jpg'  />
+      <Navbar />
+      <div className='hero-container'>
+        <h1>Hello! I'm</h1>
+        <h2>Romain Trost</h2>
+        <p>A Data Scientist and Tech Enthusiast from Belgium</p>
+      </div>
+      
     </div>
+
   );
 }
 
