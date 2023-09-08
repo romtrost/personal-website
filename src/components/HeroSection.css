@@ -17,12 +17,18 @@ img {
 .hero {
   height: 100vh;
   width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-items: center;
+  /*
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
+  */
 }
 
 .hero-container {

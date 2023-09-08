@@ -11,7 +11,8 @@ function HeroSection() {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const background2Y = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
 
   console.log(backgroundY)
@@ -57,9 +58,7 @@ function HeroSection() {
                     A Data Scientist and Tech Enthusiast from Belgium
           </motion.p>
         </motion.div>
-
-      </div>
-      <motion.img
+        <motion.img
           src='/images/header-background.jpg'
           style={{
             position: 'absolute',
@@ -72,6 +71,18 @@ function HeroSection() {
           }}
         />
         <motion.img
+          src='/images/header-background-foreground-2.png'
+          style={{
+            position: 'absolute',
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+            zIndex: 5,
+            y: background2Y,
+          }}
+        />
+        <motion.img
           src='/images/header-background-foreground.png'
           style={{
             position: 'absolute',
@@ -79,47 +90,11 @@ function HeroSection() {
             right: 0,
             bottom: 0,
             left: 0,
-            zIndex: 20,
+            zIndex: 15,
           }}
         />
-      
-    </div>
-    
-    /*
-    <div className='hero'>
-      <img src='/images/header-background.jpg'  />
-      <Navbar />
-      <div className='hero-container'>
-        <motion.h1  initial={{ y: 70, opacity: 0, scale: 1 }}
-                    animate={{ y: 0, opacity: 1, scale: 1 }}
-                    transition={{
-                      duration: 0.5,
-                      delay: 0.3,
-                      ease: [0.1, 0.4, 0.2, 1.0]
-                    }}>
-                    HELLO! I'M
-        </motion.h1>
-        <motion.h2  initial={{ y: 70, opacity: 0, scale: 1 }}
-                    animate={{ y: 0, opacity: 1, scale: 1 }}
-                    transition={{
-                      duration: 0.5,
-                      delay: 0.35,
-                      ease: [0.1, 0.4, 0.2, 1.0]
-                    }}>
-          ROMAIN TROST
-        </motion.h2>
-        <motion.p initial={{ opacity: 0, scale: 1 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 1.8,
-                    ease: "easeOut"
-                  }}>
-          A Data Scientist and Tech Enthusiast from Belgium
-        </motion.p>
       </div>
     </div>
-    */
   );
 }
 
