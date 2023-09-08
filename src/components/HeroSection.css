@@ -35,16 +35,23 @@ img {
   object-fit: contain;
 }
 
-.hero-container > h1 {
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text-container > h1 {
   color: #c5c5c5;
-  margin-top: -150px;
+  margin-top: -250px;
   font-size: 42px;
   font-weight: 300;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 4px;
 }
 
-.hero-container > h2 {
+.hero-text-container > h2 {
   color: #fff;
   font-size: 84px;
   margin-top: 20px;
@@ -53,7 +60,7 @@ img {
   letter-spacing: 12px;
 }
 
-.hero-container > p {
+.hero-text-container > p {
   margin-top: 50px;
   margin-left: 400px;
   margin-right: 400px;
