@@ -1,3 +1,33 @@
+.section-wrapper {
+  position: relative;
+  z-index: 10;
+  max-width: 1150px;
+  margin: auto;
+  padding: 9.6rem;
+  overflow: hidden;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.section-header-line {
+  width: 100%;
+  height: 1px;
+  background:  #ffffff;
+  opacity: 0.5;
+}
+
+.section-content-about {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-gap: 2.4rem;
+  gap: 2.4rem;
+}
+
 .cards {
   padding: 4rem;
   background: #1a1a1a;
@@ -5,7 +35,14 @@
 
 h1 {
   color: #ffffff;
+  font-size: 50px;
   text-align: center;
+}
+
+p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 200;
 }
 
 .cards__container {
