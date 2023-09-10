@@ -15,7 +15,7 @@ function AboutTextItem(props) {
 
   return (
     <motion.p ref={ref}
-              style={{marginBottom: '24px'}}
+              style={props.style}
               variants={{
                 hidden: { y: 25, opacity: 0, scale: 1 },
                 visible: { y: 0, opacity: 1, scale: 1 },
