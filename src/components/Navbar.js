@@ -24,12 +24,12 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={handleClick}>
-                Resume
+                Projects
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={handleClick}>
-                Projects
+                Resume
               </Link>
             </li>
           </ul>
