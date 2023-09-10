@@ -9,8 +9,8 @@ function ContentSection() {
 
     <div className='content-section'>
       <section id='about' className='section-wrapper'>
-        <div className='section-header' style={{flexDirection: 'row-reverse'}}>
-            <ContentHeaderItem text="About"/>
+        <div className='section-header'>
+            <ContentHeaderItem text="About" direction='right'/>
         </div> 
         <div className='section-content-about'>
           <div>
@@ -28,18 +28,18 @@ function ContentSection() {
         </div>
       </section>
       <section id='projects' className='section-wrapper'>
-        <div className='section-header'>
-            <ContentHeaderItem text="Projects"/>
+        <div className='section-header' style={{flexDirection: 'row-reverse'}}>
+            <ContentHeaderItem text="Projects" direction='left'/>
         </div>
       </section>
       <section id='resume' className='section-wrapper'>
-        <div className='section-header' style={{flexDirection: 'row-reverse'}}>
-            <ContentHeaderItem text="Resume"/>
+        <div className='section-header'>
+            <ContentHeaderItem text="Resume" direction='right'/>
         </div>
       </section>
       <section id='contact' className='section-wrapper'>
-        <div className='section-header'>
-            <ContentHeaderItem text="Contact"/>
+        <div className='section-header' style={{flexDirection: 'row-reverse'}}>
+            <ContentHeaderItem text="Contact" direction='left'/>
         </div>
       </section>
     </div>
