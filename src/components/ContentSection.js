@@ -2,6 +2,7 @@ import React  from 'react';
 import './ContentSection.css';
 import ContentHeaderItem from './ContentHeaderItem';
 import AboutTextItem from './AboutTextItem';
+import AboutLinkItem from './AboutLinkItem';
 
 function ContentSection() {
 
@@ -23,8 +24,12 @@ function ContentSection() {
             <AboutTextItem style={{marginBottom: '24px'}} text="Hey! I'm Bob, if you haven't already gathered that by now. 
                                                                 I'm a painter turned software engineer from Daytona, Florida. 
                                                                 I specialize in the backend, primarily Node and Rust, but love building with whatever tools are right for the job."/>
-            <AboutTextItem style={{marginBottom: '24px', fontWeight: 400, color: '#ff932e'}} text="My links &#8594;"/>
+            <div style ={{marginBottom: '24px', display: "flex", alignItems: "center"}}>
+              <AboutTextItem style={{fontWeight: 500, color: '#ffffff'}} text="My links"/>
+              <AboutLinkItem/>
+            </div>
           </div>
+            
         </div>
       </section>
       <section id='projects' className='section-wrapper'>

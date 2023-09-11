@@ -33,6 +33,16 @@
   background: #1a1a1a;
 }
 
+.linkIcon {
+  color: #ff932e;
+  margin-left: 20px;
+}
+
+.linkIcon:hover {
+  color:  #ffffff;
+  transition: all 0.2s ease-out;
+}
+
 h1 {
   color: #ffffff;
   font-size: 50px;
