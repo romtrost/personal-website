@@ -3,6 +3,8 @@ import './ContentSection.css';
 import ContentHeaderItem from './ContentHeaderItem';
 import AboutTextItem from './AboutTextItem';
 import AboutLinkItem from './AboutLinkItem';
+import AbouWorkItem from './AboutWorkItem';
+import AboutFunItem from './AboutFunItem';
 
 function ContentSection() {
 
@@ -29,6 +31,15 @@ function ContentSection() {
               <AboutLinkItem/>
             </div>
           </div>
+          <div>
+            <AbouWorkItem/>
+            <AboutFunItem/>
+          </div>
+          
+        
+          
+            
+          
             
         </div>
       </section>

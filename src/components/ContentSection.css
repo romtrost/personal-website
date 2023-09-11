@@ -43,6 +43,18 @@
   transition: all 0.2s ease-out;
 }
 
+.oval-container {
+  background-color: #2c2c2c; 
+  opacity: 1;
+  border-radius: 20px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 5px;
+}
+
 h1 {
   color: #ffffff;
   font-size: 50px;
