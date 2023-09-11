@@ -1,8 +1,7 @@
 import React, { useRef }  from 'react';
 import { motion, useScroll, useTransform } from "framer-motion";
-import '../App.css';
 import './HeroSection.css';
-import Navbar from './Navbar';
+import Navbar from '../../Navbar';
 
 function HeroSection() {
 
