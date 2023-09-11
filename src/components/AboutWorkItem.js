@@ -2,6 +2,7 @@ import React, { useEffect, useRef }  from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import AboutTool from './AboutTool';
 
 function AboutToolItem(props) {
 
@@ -16,68 +17,52 @@ function AboutToolItem(props) {
   }, [isInView]);
 
   return (
-    <div style={{marginBottom: "50px"}}>
+    <div ref={ref} style={{marginBottom: "50px"}}>
+      <motion.div style = {{display: "flex", alignItems: "center", marginBottom: '14px'}}
+                  variants={{hidden: { y: 25, opacity: 0, scale: 1 }, visible: { y: 0, opacity: 1, scale: 1 },}}
+                  initial="hidden"
+                  animate={mainControls}
+                  transition={{duration: 0.5, delay: 0.3, ease: [0.1, 0.4, 0.2, 1.0]}}>
+                  <FontAwesomeIcon icon={faBriefcase} size="xl" style={{color: "#ff932e"}}/>
+                  <p style ={{fontSize: '24px', fontWeight: 700, marginLeft: '10px'}}>
+                    Use at work
+                  </p>
+      </motion.div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
-        <FontAwesomeIcon icon={faBriefcase} size="xl" style={{color: "#ff932e"}}/>
-        <p style ={{fontSize: '24px', fontWeight: 700, marginLeft: '10px'}}>
-          Use at work
-        </p>
+        <AboutTool text="Python"
+                   width="90px"
+                   delay="0.3"/>
+        <AboutTool text="SQL"
+                   width="60px"
+                   delay="0.4"/>
+        <AboutTool text="GitHub"
+                   width="90px"
+                   delay="0.5"/>
+        <AboutTool text="AWS"
+                   width="70px"
+                   delay="0.6"/>
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
-        <div class="oval-container" style ={{width: '80px'}} >
-          <p style ={{ fontWeight: 300}}>
-            Python
-          </p>
-        </div>
-        <div class="oval-container" style ={{width: '50px'}} >
-          <p style ={{fontWeight: 300}}>
-            SQL
-          </p>
-        </div>
-        <div class="oval-container" style ={{width: '75px'}} >
-          <p style ={{fontWeight: 300}}>
-            GitHub
-          </p>
-        </div>
-        <div class="oval-container" style ={{width: '55px'}} >
-          <p style ={{fontWeight: 300}}>
-            AWS
-          </p>
-        </div>
+        <AboutTool text="Numpy"
+                   width="80px"
+                   delay="0.3"/>
+        <AboutTool text="Scikit-Learn"
+                   width="120px"
+                   delay="0.4"/>
+        <AboutTool text="Pandas"
+                   width="90px"
+                   delay="0.5"/>
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
-        <div class="oval-container" style ={{width: '80px'}} >
-          <p style ={{ fontWeight: 300}}>
-            Numpy
-          </p>
-        </div>
-        <div class="oval-container" style ={{width: '120px'}} >
-          <p style ={{fontWeight: 300}}>
-            Scikit-Learn
-          </p>
-        </div>
-        <div class="oval-container" style ={{width: '80px'}} >
-          <p style ={{fontWeight: 300}}>
-            Pandas
-          </p>
-        </div>
-      </div>
-      <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
-        <div class="oval-container" style ={{width: '110px'}} >
-          <p style ={{ fontWeight: 300}}>
-            Tensorflow
-          </p>
-        </div>
-        <div class="oval-container" style ={{width: '80px'}} >
-          <p style ={{fontWeight: 300}}>
-            Pytorch
-          </p>
-        </div>
-        <div class="oval-container" style ={{width: '55px'}} >
-          <p style ={{fontWeight: 300}}>
-            Jira
-          </p>
-        </div>
+        <AboutTool text="Tensorflow"
+                   width="130px"
+                   delay="0.3"/>
+        <AboutTool text="Pytorch"
+                   width="100px"
+                   delay="0.4"/>
+        <AboutTool text="Jira"
+                   width="60px"
+                   delay="0.5"/>
       </div>
     </div>
   );

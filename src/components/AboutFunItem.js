@@ -2,6 +2,7 @@ import React, { useEffect, useRef }  from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFaceSmile } from '@fortawesome/free-solid-svg-icons'
+import AboutTool from './AboutTool';
 
 function AboutFunItem(props) {
 
@@ -16,51 +17,41 @@ function AboutFunItem(props) {
   }, [isInView]);
 
   return (
-    <div style={{marginBottom: "50px"}}>
+    <div ref={ref} style={{marginBottom: "50px"}}>
+      <motion.div style = {{display: "flex", alignItems: "center", marginBottom: '14px'}}
+                  variants={{hidden: { y: 25, opacity: 0, scale: 1 }, visible: { y: 0, opacity: 1, scale: 1 },}}
+                  initial="hidden"
+                  animate={mainControls}
+                  transition={{duration: 0.5, delay: 0.3, ease: [0.1, 0.4, 0.2, 1.0]}}>
+                  <FontAwesomeIcon icon={faFaceSmile} size="xl" style={{color: "#ff932e"}}/>
+                  <p style ={{fontSize: '24px', fontWeight: 700, marginLeft: '10px'}}>
+                  Use for fun
+                  </p>
+      </motion.div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
-        <FontAwesomeIcon icon={faFaceSmile} size="xl" style={{color: "#ff932e"}}/>
-        <p style ={{fontSize: '24px', fontWeight: 700, marginLeft: '10px'}}>
-          Use for fun
-        </p>
+        <AboutTool text="Javascript"
+                   width="110px"
+                   delay="0.3"/>
+        <AboutTool text="Typescript"
+                   width="110px"
+                   delay="0.4"/>
+        <AboutTool text="HTML"
+                   width="60px"
+                   delay="0.5"/>
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
-        <div class="oval-container" style ={{width: '110px'}} >
-          <p style ={{ fontWeight: 300}}>
-            Javascript
-          </p>
-        </div>
-        <div class="oval-container" style ={{width: '110px'}} >
-          <p style ={{fontWeight: 300}}>
-            Typescript
-          </p>
-        </div>
-        <div class="oval-container" style ={{width: '55px'}} >
-          <p style ={{fontWeight: 300}}>
-            HTML
-          </p>
-        </div>
-      </div>
-      <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
-        <div class="oval-container" style ={{width: '70px'}} >
-          <p style ={{ fontWeight: 300}}>
-            React
-          </p>
-        </div>
-        <div class="oval-container" style ={{width: '90px'}} >
-          <p style ={{fontWeight: 300}}>
-            C & C++
-          </p>
-        </div>
-        <div class="oval-container" style ={{width: '45px'}} >
-          <p style ={{fontWeight: 300}}>
-            C#
-          </p>
-        </div>
-        <div class="oval-container" style ={{width: '60px'}} >
-          <p style ={{ fontWeight: 300}}>
-            Unity
-          </p>
-        </div>
+        <AboutTool text="React"
+                   width="70px"
+                   delay="0.3"/>
+        <AboutTool text="C & C++"
+                   width="90px"
+                   delay="0.4"/>
+        <AboutTool text="C#"
+                   width="50px"
+                   delay="0.5"/>
+        <AboutTool text="Unity"
+                   width="60px"
+                   delay="0.6"/>
       </div>
     </div>
   );
