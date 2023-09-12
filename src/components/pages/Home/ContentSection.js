@@ -35,12 +35,6 @@ function ContentSection() {
             <AbouWorkItem/>
             <AboutFunItem/>
           </div>
-          
-        
-          
-            
-          
-            
         </div>
       </section>
       <section id='projects' className='section-wrapper'>
