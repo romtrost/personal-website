@@ -60,23 +60,12 @@ function HeroSection() {
         <motion.img
           src='/images/header-background.jpg'
           style={{
-            position: 'absolute',
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0,
-            zIndex: 0,
             y: backgroundY,
           }}
         />
         <motion.img
           src='/images/header-background-foreground-2.png'
           style={{
-            position: 'absolute',
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0,
             zIndex: 5,
             y: background2Y,
           }}
@@ -84,11 +73,6 @@ function HeroSection() {
         <motion.img
           src='/images/header-background-foreground.png'
           style={{
-            position: 'absolute',
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0,
             zIndex: 15,
           }}
         />
