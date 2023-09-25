@@ -24,6 +24,7 @@ function HeroSection() {
     className='hero'>
       <Navbar />
       <div className='hero-container'>
+        <div className='transition-overlay'></div>
         <motion.div className='hero-text-container'
                     style={{ 
                       zIndex: 10,

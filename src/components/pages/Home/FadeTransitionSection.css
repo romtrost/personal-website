@@ -8,7 +8,8 @@
   z-index: 10;
   margin: auto;
   padding: 0rem;
-  height: 5vh;
+  height: 40vh;
+  width: 100%;
   overflow: hidden;
 }
 

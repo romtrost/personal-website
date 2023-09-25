@@ -7,8 +7,7 @@ function FadeTransitionSection() {
 
     <div className='transition-section'>
       <div className='transition-wrapper'>
-        <div className='overlay'></div>
-        <img src='/images/header-background-foreground.png'/>
+        <img src='/images/header-background-transition.png'/>
       </div>
     </div>
 

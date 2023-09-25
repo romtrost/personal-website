@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <HeroSection />
-      <FadeTransitionSection />
+      {/*<FadeTransitionSection />*/}
       <ContentSection />
     </>
   );
