@@ -5,6 +5,7 @@ import AboutTextItem from './AboutTextItem';
 import AboutLinkItem from './AboutLinkItem';
 import AbouWorkItem from './AboutWorkItem';
 import AboutFunItem from './AboutFunItem';
+import ExperienceItem from './ExperienceItem';
 
 function ContentSection() {
 
@@ -42,9 +43,35 @@ function ContentSection() {
             <ContentHeaderItem text="Projects" direction='left'/>
         </div>
       </section>
-      <section id='resume' className='section-wrapper'>
+      <section id='experience' className='section-wrapper'>
         <div className='section-header'>
-            <ContentHeaderItem text="Resume" direction='right'/>
+            <ContentHeaderItem text="Experience" direction='right'/>
+        </div>
+        <div className='section-content-experience'>
+          <ExperienceItem style={{marginBottom: '14px'}}
+                          company="Ericsson"
+                          date="Nov. 2022 - Present"
+                          title="Data Scientist"
+                          location="Stockholm"
+                          description="Hey! I'm Bob, if you haven't already gathered that by now. 
+                                       I'm a painter turned software engineer from Daytona, Florida. 
+                                       I specialize in the backend, primarily Node and Rust, but love building with whatever tools are right for the job."/>
+          <ExperienceItem style={{marginBottom: '14px'}}
+                          company="Axfood"
+                          date="Jun. 2022 - Oct. 2022"
+                          title="Data Science Intern"
+                          location="Stockholm"
+                          description="Hey! I'm Bob, if you haven't already gathered that by now. 
+                                       I'm a painter turned software engineer from Daytona, Florida. 
+                                       I specialize in the backend, primarily Node and Rust, but love building with whatever tools are right for the job."/>
+          <ExperienceItem style={{marginBottom: '14px'}}
+                          company="Schréder"
+                          date="Jul. 2020 - Aug. 2020"
+                          title="Software Engineering Intern"
+                          location="Liège"
+                          description="Hey! I'm Bob, if you haven't already gathered that by now. 
+                                       I'm a painter turned software engineer from Daytona, Florida. 
+                                       I specialize in the backend, primarily Node and Rust, but love building with whatever tools are right for the job."/>
         </div>
       </section>
       <section id='contact' className='section-wrapper'>
