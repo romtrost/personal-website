@@ -7,7 +7,7 @@ function ShootingStar(props) {
 
     <motion.div
     className="shooting-star"
-    initial={{ opacity: 0 }}
+    initial={{ opacity: 0, width: props.width, height: props.height }}
     animate={{
       opacity: [0, .5, 1, .5, 0],
       x: [props.startPointX, props.startPointX+props.trajectoryX],
