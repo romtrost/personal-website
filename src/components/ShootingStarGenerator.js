@@ -53,7 +53,7 @@ function ShootingStarGenerator(props) {
 
   useEffect(() => {
     // Start generating stars every second
-    const intervalId = setInterval(generateStar, 250);
+    const intervalId = setInterval(generateStar, 500);
 
     // Cleanup the interval when the component unmounts
     return () => clearInterval(intervalId);
