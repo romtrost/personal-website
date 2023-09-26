@@ -2,6 +2,7 @@ import React, { useRef }  from 'react';
 import { motion, useScroll, useTransform } from "framer-motion";
 import './HeroSection.css';
 import Navbar from '../../Navbar';
+import ShootingStarGenerator from '../../ShootingStarGenerator';
 
 function HeroSection() {
 
@@ -23,8 +24,9 @@ function HeroSection() {
     ref={ref}
     className='hero'>
       <Navbar />
+      <ShootingStarGenerator />
       <div className='hero-container'>
-        <div className='transition-overlay'></div>
+        <div className='transition-overlay'/>
         <motion.div className='hero-text-container'
                     style={{ 
                       zIndex: 10,

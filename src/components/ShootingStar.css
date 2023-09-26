@@ -1,0 +1,13 @@
+.shooting-star {
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.shooting-star-generator {
+  position: absolute;
+  height: 100%;
+  width: 100%
+}
