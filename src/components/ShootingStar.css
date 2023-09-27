@@ -6,8 +6,23 @@
   position: absolute;
 }
 
+.trail-line {
+  width: 100%;
+  height: 1px;
+  position: relative;
+  background:  #919191;
+  opacity: 0.5;
+}
+
 .shooting-star-generator {
   position: absolute;
   height: 100%;
-  width: 100%
+  width: 100%;
+  align-items: center;
+}
+
+line {
+  stroke-width: 1px;
+  stroke-linecap: round;
+  fill: transparent;
 }
