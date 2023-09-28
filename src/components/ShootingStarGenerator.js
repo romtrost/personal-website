@@ -15,10 +15,14 @@ function ShootingStarGenerator(props) {
     // Get the container's dimensions
     const containerWidth = containerRef.current.clientWidth;
     const containerHeight = containerRef.current.clientHeight;
-    // generate size
-    const minSize = 1;
-    const maxSize = 5;
+    // generate star size
+    const minSize = 2;
+    const maxSize = 4;
     const size = Math.floor(minSize + (Math.random() * (maxSize - minSize + 1)));
+    // generate trail length
+    const minLength= 4;
+    const maxLength = 8;
+    const length = minLength + (Math.random() * (maxLength - minLength + 1));
     // generate x starting position
     const minX = 40;
     const maxX = 100;
@@ -40,6 +44,7 @@ function ShootingStarGenerator(props) {
         key={Date.now()} // Using a unique key to ensure React re-renders when a new star is added
         width={size}
         height={size}
+        trailLength={length / 100}
         startPointX={containerWidth * (startPointX / 100)} // get percent of container value
         startPointY={containerHeight * (startPointY / 100)} // get percent of container value
         trajectoryX={containerWidth * possibleTrajX[randomIndex]}
