@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import './HeroSection.css';
 import Navbar from '../../Navbar';
 import ShootingStarGenerator from '../../ShootingStarGenerator';
+import StaticStarGenerator from '../../StaticStarGenerator';
 
 function HeroSection() {
 
@@ -25,6 +26,7 @@ function HeroSection() {
     className='hero'>
       <Navbar />
       <ShootingStarGenerator />
+      <StaticStarGenerator />
       <div className='hero-container'>
         <div className='transition-overlay'/>
         <motion.div className='hero-text-container'

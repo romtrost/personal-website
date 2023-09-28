@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { motion } from 'framer-motion';
 import ShootingStar from './ShootingStar';
 import './ShootingStar.css';
 
@@ -68,7 +67,7 @@ function ShootingStarGenerator(props) {
 
     <div className='shooting-star-generator' ref={containerRef}>
       {stars.map((star, index) => (
-        <motion.div key={index}>{star}</motion.div>
+        <div key={index}>{star}</div>
       ))}
     </div>
 
