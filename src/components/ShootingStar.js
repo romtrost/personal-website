@@ -3,7 +3,7 @@ import { motion} from 'framer-motion';
 
 function ShootingStar(props) {
 
-  const selectedDuration = 1;
+  const selectedDuration = 1.25;
 
   return (
 
@@ -20,13 +20,13 @@ function ShootingStar(props) {
               opacity: 0, 
             }}
             animate={{
-              opacity: [0, .5, 1, .5, 0],
+              opacity: [0, .8, 1, .8, 0],
               x: [props.startPointX, props.startPointX+props.trajectoryX],
               y: [props.startPointY, props.startPointY+props.trajectoryY],
               transition: {
-                opacity: { delay: 0, duration: selectedDuration, ease: "easeInOut" },
-                x: {delay: 0, duration: selectedDuration, ease: "easeInOut" },
-                y: {delay: 0, duration: selectedDuration, ease: "easeInOut" }
+                opacity: { delay: props.delay, duration: selectedDuration, ease: "easeInOut" },
+                x: {delay: props.delay, duration: selectedDuration, ease: "easeInOut" },
+                y: {delay: props.delay, duration: selectedDuration, ease: "easeInOut" }
               }
             }}
           />
@@ -46,9 +46,9 @@ function ShootingStar(props) {
               y: [props.startPointY, props.startPointY+props.trajectoryY],
               transition: {
                 //pathLength: { delay: props.delay, ease: "easeInOut", duration: 0.2*selectedDuration},
-                opacity: { delay: 0, duration: selectedDuration, ease: "easeInOut"  },
-                x: {delay: 0, duration: selectedDuration, ease: "easeInOut"  },
-                y: {delay: 0, duration: selectedDuration, ease: "easeInOut"  }
+                opacity: { delay: props.delay, duration: selectedDuration, ease: "easeInOut"  },
+                x: {delay: props.delay, duration: selectedDuration, ease: "easeInOut"  },
+                y: {delay: props.delay, duration: selectedDuration, ease: "easeInOut"  }
               }
             }}
           />

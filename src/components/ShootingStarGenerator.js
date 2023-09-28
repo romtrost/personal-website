@@ -15,8 +15,8 @@ function ShootingStarGenerator(props) {
     const containerWidth = containerRef.current.clientWidth;
     const containerHeight = containerRef.current.clientHeight;
     // generate star size
-    const minSize = 2;
-    const maxSize = 4;
+    const minSize = 1;
+    const maxSize = 3;
     const size = Math.floor(minSize + (Math.random() * (maxSize - minSize + 1)));
     // generate trail length
     const minLength= 4;
@@ -35,7 +35,7 @@ function ShootingStarGenerator(props) {
     const maxDelay = 1;
     const delay = minDelay + (Math.random() * (maxDelay - minDelay + 1));
     // generate x trajectory
-    const possibleTrajX = [-0.25, -0.275, -0.3, -0.325, -0.35, -0.375, -0.4] // can add more options here
+    const possibleTrajX = [-0.15, -0.2, -0.25, -0.3, -0.35, -0.4]
     const randomIndex = Math.floor(Math.random() * possibleTrajX.length);
     // generate star using above parameters
     const newStar = (
@@ -57,7 +57,7 @@ function ShootingStarGenerator(props) {
 
   useEffect(() => {
     // Start generating stars every second
-    const intervalId = setInterval(generateStar, 500);
+    const intervalId = setInterval(generateStar, 1000);
 
     // Cleanup the interval when the component unmounts
     return () => clearInterval(intervalId);
