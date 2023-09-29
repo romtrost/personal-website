@@ -64,6 +64,13 @@ function ShootingStarGenerator(props) {
     return () => clearInterval(intervalId);
   }, []);
 
+  useEffect(() => {
+    // Check if the number of stars exceeds 100 and remove the oldest stars
+    if (stars.length > 100) {
+      setStars((prevState) => prevState.slice(100)); // Remove the oldest stars
+    }
+  }, [stars]);
+
   return (
 
     <div className='shooting-star-generator' ref={containerRef}>
