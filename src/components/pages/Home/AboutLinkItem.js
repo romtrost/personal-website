@@ -47,21 +47,13 @@ function AboutLinkItem(props) {
                   transition={{duration: 0.5, delay: 0.7, ease: [0.1, 0.4, 0.2, 1.0]}}>
                   <FontAwesomeIcon icon={faFile} size="xl"/>
       </motion.div>
-      {/*
-      <motion.div variants={{hidden: { y: 25, opacity: 0, scale: 1 }, visible: { y: 0, opacity: 1, scale: 1 },}}
-                  initial="hidden"
-                  animate={mainControls}
-                  transition={{duration: 0.5, delay: 0.7, ease: [0.1, 0.4, 0.2, 1.0]}}>
-                  <FontAwesomeIcon icon={faEnvelope} size="xl" style={{color: "#ff932e", marginLeft: '20px'}} />
-      </motion.div>
-      <motion.div variants={{hidden: { y: 25, opacity: 0, scale: 1 }, visible: { y: 0, opacity: 1, scale: 1 },}}
+      <motion.div className="linkIcon"
+                  variants={{hidden: { y: 25, opacity: 0, scale: 1 }, visible: { y: 0, opacity: 1, scale: 1 },}}
                   initial="hidden"
                   animate={mainControls}
                   transition={{duration: 0.5, delay: 0.8, ease: [0.1, 0.4, 0.2, 1.0]}}>
-                  <FontAwesomeIcon icon={faPhone} size="xl" style={{color: "#ff932e", marginLeft: '20px'}} />
+                  <FontAwesomeIcon icon={faEnvelope} size="xl"/>
       </motion.div>
-      */}
-      
     </div>
   );
 }

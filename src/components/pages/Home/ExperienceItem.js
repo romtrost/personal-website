@@ -8,16 +8,6 @@ import AboutTool from './AboutTool';
 
 function ExperienceItem(props) {
 
-  const ref = useRef(null);
-  const isInView = useInView(ref, {once: true})
-  const mainControls = useAnimation();
-
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-    }
-  }, [isInView]);
-
   return (
     <div style={{marginBottom: '30px'}}>
       <ExperienceHeader1 company={props.company} 
