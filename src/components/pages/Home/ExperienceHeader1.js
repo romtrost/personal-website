@@ -28,8 +28,8 @@ function ExperienceHeader1(props) {
                   delay: 0.3,
                   ease: [0.1, 0.4, 0.2, 1.0]
                 }}>
-      <h1>{props.company}</h1>
-      <h2>{props.date}</h2>
+      <h2>{props.company}</h2>
+      <h3>{props.date}</h3>
     </motion.div>
   );
 }

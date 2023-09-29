@@ -8,14 +8,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
+  letter-spacing: 4px;
   backdrop-filter: blur(15px);
 }
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 0px;
   list-style: none;
   text-align: center;
   width: 60vw;

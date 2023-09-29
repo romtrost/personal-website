@@ -13,22 +13,27 @@ function Navbar() {
         <ul className='nav-menu'>
           <li className='nav-item'>
             <Link to='/' className='nav-links' onClick={handleClick}>
-              Home
+              HOME
             </Link>
           </li>
           <li className='nav-item'>
             <Link to='/' className='nav-links' onClick={handleClick}>
-              About
+              ABOUT
             </Link>
           </li>
           <li className='nav-item'>
             <Link to='/' className='nav-links' onClick={handleClick}>
-              Projects
+              PROJECTS
             </Link>
           </li>
           <li className='nav-item'>
             <Link to='/' className='nav-links' onClick={handleClick}>
-              Resume
+              EXPERIENCE
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link to='/' className='nav-links' onClick={handleClick}>
+              CONTACT
             </Link>
           </li>
         </ul>

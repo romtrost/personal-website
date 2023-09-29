@@ -25,7 +25,7 @@ function StaticStarGenerator(props) {
       const maxX = 99;
       const startPointX = Math.floor(minX + (Math.random() * (maxX - minX + 1)));
       // generate y starting position
-      const minY = 1;
+      const minY = 2;
       const maxY = 50;
       const startPointY = Math.floor(minY + (Math.random() * (maxY - minY + 1)));
       // generate duration
