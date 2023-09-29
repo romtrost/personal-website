@@ -15,7 +15,7 @@ function StaticStarGenerator(props) {
 
     const generatedStars = [];
 
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 84; i++) {
       // generate star size
       const minSize = 1;
       const maxSize = 3;
@@ -41,6 +41,7 @@ function StaticStarGenerator(props) {
           startPointX={containerWidth * (startPointX / 100)}
           startPointY={containerHeight * (startPointY / 100)}
           duration={duration}
+          backgroundY={props.backgroundY}
         />
       );
     }

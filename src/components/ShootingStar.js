@@ -9,11 +9,14 @@ function ShootingStar(props) {
 
   <div className="shooting-star-generator"
        style={{ 
-        zIndex: 100,
+        zIndex: 12,
        }}>
       <motion.svg
         width="100%"
-        height="100%">
+        height="100%"
+        style={{
+          y: props.backgroundY,
+        }}>
           <motion.circle
             r={props.width}
             initial={{ 

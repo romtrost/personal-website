@@ -12,8 +12,8 @@ function HeroSection() {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const background2Y = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
+  const background2Y = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
 
   console.log(backgroundY)
@@ -25,8 +25,6 @@ function HeroSection() {
     ref={ref}
     className='hero'>
       <Navbar />
-      <ShootingStarGenerator />
-      <StaticStarGenerator />
       <div className='hero-container'>
         <div className='transition-overlay'/>
         <motion.div className='hero-text-container'
@@ -62,6 +60,12 @@ function HeroSection() {
                     A Data Scientist and Tech Enthusiast from Belgium
           </motion.p>
         </motion.div>
+        <ShootingStarGenerator 
+          backgroundY={backgroundY}
+        />
+        <StaticStarGenerator 
+          backgroundY={backgroundY}
+        />
         <motion.img
           src='/images/header-background.jpg'
           style={{

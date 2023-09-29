@@ -49,6 +49,7 @@ function ShootingStarGenerator(props) {
         trajectoryX={containerWidth * possibleTrajX[randomIndex]}
         trajectoryY={containerHeight * 0.15}
         delay={delay}
+        backgroundY={props.backgroundY}
       />
     );
 
