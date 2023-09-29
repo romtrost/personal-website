@@ -34,7 +34,7 @@ function HeroSection() {
                       animate={{ y: 0, opacity: 1, scale: 1 }}
                       transition={{
                         duration: 1,
-                        delay: 0.3,
+                        delay: 0.5,
                         ease: [0.1, 0.4, 0.2, 1.0]
                       }}>
                       HELLO! I'M
@@ -43,7 +43,7 @@ function HeroSection() {
                       animate={{ y: 0, opacity: 1, scale: 1 }}
                       transition={{
                         duration: 1,
-                        delay: 0.35,
+                        delay: 0.55,
                         ease: [0.1, 0.4, 0.2, 1.0]
                       }}>
                       ROMAIN TROST
@@ -52,7 +52,7 @@ function HeroSection() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
                       duration: 0.5,
-                      delay: 1.8,
+                      delay: 2,
                       ease: "easeOut"
                     }}>
                     A Data Scientist and Tech Enthusiast from Belgium
