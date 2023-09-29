@@ -28,7 +28,7 @@ function ContactText(props) {
                 delay: 0.3,
                 ease: [0.1, 0.4, 0.2, 1.0]
               }}>
-              Reach out by <span style={{color: '#ff932e', fontWeight: '400'}}>email</span> if you want to connect! 
+              Reach out by e-mail if you want to connect! 
               You can also find me on <span style={{color: '#ff932e', fontWeight: '400'}}>Linkedin</span> if you prefer.
     </motion.p>
     
