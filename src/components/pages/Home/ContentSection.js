@@ -13,7 +13,7 @@ function ContentSection() {
   return (
 
     <div className='content-section'>
-      <section id='about' className='section-wrapper' style={{marginTop: '9.6rem'}}>
+      <section id='about' className='section-wrapper' style={{marginTop: '30vh'}}>
         <div className='section-header'>
             <ContentHeaderItem text="ABOUT" direction='right'/>
         </div> 
