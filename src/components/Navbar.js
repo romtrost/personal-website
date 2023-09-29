@@ -9,32 +9,30 @@ function Navbar() {
 
   return (
     <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <ul className='nav-menu'>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={handleClick}>
-                Home
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={handleClick}>
-                About
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={handleClick}>
-                Projects
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={handleClick}>
-                Resume
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div className='navbar'>
+        <ul className='nav-menu'>
+          <li className='nav-item'>
+            <Link to='/' className='nav-links' onClick={handleClick}>
+              Home
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link to='/' className='nav-links' onClick={handleClick}>
+              About
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link to='/' className='nav-links' onClick={handleClick}>
+              Projects
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link to='/' className='nav-links' onClick={handleClick}>
+              Resume
+            </Link>
+          </li>
+        </ul>
+      </div>
     </>
   )
 }
