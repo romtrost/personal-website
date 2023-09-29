@@ -1,15 +1,15 @@
 .navbar {
   position: fixed; /* or use 'absolute' depending on your layout */
   top: 0;
-  height: 60px;
+  height: 50px;
   width: 100%;
   background-color: transparent; /* Set your desired background color */
   z-index: 999; /* Adjust the z-index value as needed to make it overlay other content */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
-  backdrop-filter: blur(10px);
+  font-size: 18px;
+  backdrop-filter: blur(15px);
 }
 
 .nav-menu {
