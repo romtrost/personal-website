@@ -17,6 +17,12 @@ function ShootingStar(props) {
         style={{
           y: props.backgroundY,
         }}>
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" />
+              <stop offset="100%" />
+            </linearGradient>
+          </defs>
           <motion.circle
             r={props.width}
             initial={{ 

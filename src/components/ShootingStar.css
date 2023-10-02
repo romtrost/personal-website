@@ -1,9 +1,18 @@
 .shooting-star {
+  position: absolute;
   width: 3px;
   height: 3px;
   background: white;
   border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1),
+              0 0 0 4px rgba(255, 255, 255, 0.1);
+}
+
+.trail {
   position: absolute;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(10deg, white, transparent);
 }
 
 .shooting-star-generator {
@@ -15,10 +24,20 @@
 
 line {
   stroke-width: 1px;
-  stroke-linecap: round;
-  stroke: #919191;
+  stroke: url(#gradient);
+}
+
+#gradient stop:first-child {
+  stop-color: white;
+  stop-opacity: 1;
+}
+
+#gradient stop:last-child {
+  stop-color: transparent;
+  stop-opacity: 1;
 }
 
 circle {
   fill: white;
+  filter: drop-shadow(0px 0px 3px rgb(255 255 255 / 1));
 }

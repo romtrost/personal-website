@@ -19,8 +19,8 @@ function ShootingStarGenerator(props) {
     const maxSize = 3;
     const size = Math.floor(minSize + (Math.random() * (maxSize - minSize + 1)));
     // generate trail length
-    const minLength= 4;
-    const maxLength = 8;
+    const minLength= 15;
+    const maxLength = 30;
     const length = minLength + (Math.random() * (maxLength - minLength + 1));
     // generate x starting position
     const minX = 40;
@@ -66,7 +66,7 @@ function ShootingStarGenerator(props) {
 
   useEffect(() => {
     // Check if the number of stars exceeds 100 and remove the oldest stars
-    if (stars.length > 100) {
+    if (stars.length > 42) {
       setStars((prevState) => prevState.slice(100)); // Remove the oldest stars
     }
   }, [stars]);
