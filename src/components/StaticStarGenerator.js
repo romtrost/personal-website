@@ -57,7 +57,7 @@ function StaticStarGenerator(props) {
     return () => {
       window.removeEventListener('resize', generateStars);
     };
-  }, []);
+  }, [props.backgroundY]);
 
   return (
     <div className='shooting-star-generator' ref={containerRef}>
