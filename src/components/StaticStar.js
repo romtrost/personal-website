@@ -18,19 +18,22 @@ function StaticStar(props) {
           <motion.circle
             initial={{ 
               opacity: 0, 
-              x: props.startPointX,
-              y: props.startPointY,
               r: props.width
             }}
             animate={{
               opacity: [.8, .9, 1, .7, .5, .6, .8, .9, 1, 0.9, 0.6, 0.8, 0.7],
-              r: [props.width, props.width+0.5, props.width, props.width-0.25, props.width-0.5, props.width]
+              r: [props.width, props.width+0.5, props.width, props.width-0.25, props.width-0.5, props.width],
+              x: props.startPointX,
+              y: props.startPointY,
+              transition:{
+                opacity: {duration: props.duration, ease: "easeInOut", repeat: Infinity, },
+                r: {duration: props.duration, ease: "easeInOut", repeat: Infinity, },
+                x: {duration: 0.0 },
+                y: {duration: 0.0 }
+              }
             }}
-            transition= {{ 
-              duration: props.duration,
-              ease: "easeInOut",
-              repeat: Infinity,
-            }}
+
+            
           />
       </motion.svg>
   </div>
