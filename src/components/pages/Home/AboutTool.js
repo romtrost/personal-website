@@ -18,7 +18,7 @@ function AboutTool(props) {
   return (
 
     <motion.div ref={ref}
-                class="oval-container" style ={{width: props.width}}
+                class="tool-container" style ={{width: props.width}}
                 variants={{hidden: { y: 25, opacity: 0, scale: 1 }, visible: { y: 0, opacity: 1, scale: 1 },}}
                 initial="hidden"
                 animate={mainControls}

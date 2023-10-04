@@ -5,6 +5,7 @@ import AboutTextItem from './AboutTextItem';
 import AboutLinkItem from './AboutLinkItem';
 import AbouWorkItem from './AboutWorkItem';
 import AboutFunItem from './AboutFunItem';
+import ProjectItem from './ProjectItem';
 import ExperienceItem from './ExperienceItem';
 import ContactItem from './ContactItem';
 
@@ -43,8 +44,13 @@ function ContentSection() {
         <div className='section-header' style={{flexDirection: 'row-reverse'}}>
             <ContentHeaderItem text="PROJECTS" direction='left'/>
         </div>
-        <div className='section-content-experience'>
-
+        <div className='section-content-projects'>
+          <div>
+            <ProjectItem/>
+          </div>
+          <div>
+            <ProjectItem/>
+          </div>
         </div>
       </section>
       <section id='experience' className='section-wrapper'>
