@@ -29,7 +29,8 @@ function ProjectItem1(props) {
                       text='Learn more '
                       iconColor='#ff932e'/>
       </div>
-      <motion.div class="project-image-container"
+      <motion.div ref={ref} 
+                  class="project-image-container"
                   variants={{
                     hidden: { y: 50, opacity: 0, scale: 1 }, 
                     visible: { y: 0, opacity: 1, scale: 1 },
@@ -48,7 +49,6 @@ function ProjectItem1(props) {
                     }}
                   />
       </motion.div> 
-      <div ref={ref}/>
     </div>
 
   );
