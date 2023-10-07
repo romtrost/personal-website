@@ -5,7 +5,8 @@ import AboutTextItem from './AboutTextItem';
 import AboutLinkItem from './AboutLinkItem';
 import AbouWorkItem from './AboutWorkItem';
 import AboutFunItem from './AboutFunItem';
-import ProjectItem from './ProjectItem';
+import ProjectItem1 from './ProjectItem1';
+import ProjectItem2 from './ProjectItem2';
 import ExperienceItem from './ExperienceItem';
 import ContactItem from './ContactItem';
 
@@ -42,15 +43,27 @@ function ContentSection() {
       </section>
       <section id='projects' className='section-wrapper'>
         <div className='section-header' style={{flexDirection: 'row-reverse'}}>
-            <ContentHeaderItem text="PROJECTS" direction='left'/>
+          <ContentHeaderItem text="PROJECTS" direction='left'/>
         </div>
         <div className='section-content-projects'>
-          <div>
-            <ProjectItem/>
-          </div>
-          <div>
-            <ProjectItem/>
-          </div>
+          <ProjectItem1 name="Spotify Music Recommender"
+                        tools="Spotify API - Python - Numpy"
+                        description="A real-time coaching app for students learning to paint. 
+                                     This app is my baby, designed and built on my own.
+                                     A real-time coaching app for students learning to paint. 
+                                     This app is my baby, designed and built on my own."/>
+          <ProjectItem2 name="Spotify Music Recommender"
+                        tools="Spotify API - Python - Numpy"
+                        description="A real-time coaching app for students learning to paint. 
+                                     This app is my baby, designed and built on my own.
+                                     A real-time coaching app for students learning to paint. 
+                                     This app is my baby, designed and built on my own."/>
+          <ProjectItem1 name="Spotify Music Recommender"
+                        tools="Spotify API - Python - Numpy"
+                        description="A real-time coaching app for students learning to paint. 
+                                     This app is my baby, designed and built on my own.
+                                     A real-time coaching app for students learning to paint. 
+                                     This app is my baby, designed and built on my own."/>                                 
         </div>
       </section>
       <section id='experience' className='section-wrapper'>
