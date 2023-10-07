@@ -137,6 +137,10 @@
   text-align: center;
 }
 
+.project-image-container > img {
+  object-fit: cover;
+}
+
 .projects-header-line {
   flex: 1;
   height: 1px;

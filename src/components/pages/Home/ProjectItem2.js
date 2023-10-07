@@ -34,7 +34,8 @@ function ProjectItem2(props) {
                   <motion.img
                     src='/images/spotify.jpg'
                     style={{
-                      width: '70%',
+                      width: '100%',
+                      height: '100%',
                       borderRadius: '7px',
                     }}
                   />
