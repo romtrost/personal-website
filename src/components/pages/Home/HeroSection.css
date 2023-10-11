@@ -16,13 +16,19 @@ video {
   inset: 0;
 }
 
-.hero {
+.hero-section {
   height: 100vh;
   width: 100%;
   overflow: hidden;
   position: relative;
   display: grid;
   place-items: center;
+}
+
+.hero-bottom {
+  height: 14.4rem;
+  width: 100%;
+  background: #131313;
 }
 
 .hero-container {

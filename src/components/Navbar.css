@@ -27,6 +27,11 @@
   height: 80px;
 }
 
+.nav-item .active {
+  color: #ff932e;
+  transition: all 0.2s ease-out;
+}
+
 .nav-links {
   color: #fff;
   display: flex;
