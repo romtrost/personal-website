@@ -3,6 +3,7 @@ import '../../../App.css';
 import Navbar from '../../Navbar';
 import HeroSection from './HeroSection';
 import ContentSection from './ContentSection';
+import FooterSection from './FooterSection';
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <Navbar />
       <HeroSection />
       <ContentSection />
+      <FooterSection />
     </>
   );
 }
