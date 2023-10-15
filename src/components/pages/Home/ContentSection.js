@@ -23,7 +23,7 @@ function ContentSection() {
         <div className='section-content-about'>
           <div>
             <AboutTextItem style={{marginBottom: '24px'}} text="Hey! I'm Romain, a data scientist and tech enthusiast from Belgium. 
-                                                                I have a deep passion for creating software and specialize in developping Machine Learning solutions for targeted applications."/>
+                                                                I have a deep passion for creating software and specialize in developping machine learning solutions for targeted applications."/>
             <AboutTextItem style={{marginBottom: '24px'}} text="I currently work for Ericsson, where I mainly focus on building predictive AI models designed for forecasting and detecting anomalies in 5G network data.
                                                                 Through this work, I've co-authored and filed a patent application for an innovative approach to mobile traffic prediction."/>
             <AboutTextItem style={{marginBottom: '24px'}} text="Outside of work, I love keeping up to date with all the latest advancements in AI.
