@@ -8,6 +8,7 @@ import AboutFunItem from './AboutFunItem';
 import ProjectItem1 from './ProjectItem1';
 import ProjectItem2 from './ProjectItem2';
 import ExperienceItem from './ExperienceItem';
+import ContactHeaderItem from './ContactHeaderItem';
 import ContactItem from './ContactItem';
 
 function ContentSection() {
@@ -66,7 +67,7 @@ function ContentSection() {
                                      This app is my baby, designed and built on my own."/>                                 
         </div>
       </section>
-      <section id='experience' className='section-wrapper'>
+      <section id='experience' className='section-wrapper' style={{paddingBottom: '4.8rem'}}>
         <div className='section-header'>
             <ContentHeaderItem text="EXPERIENCE" direction='right'/>
         </div>
@@ -97,12 +98,12 @@ function ContentSection() {
                                        I specialize in the backend, primarily Node and Rust, but love building with whatever tools are right for the job."/>
         </div>
       </section>
-      <section id='contact' className='section-wrapper' style={{paddingTop: '28rem', paddingBottom: '0vh'}}>
+      <section id='contact' className='section-wrapper' style={{paddingTop: '24rem', paddingBottom: '0'}}>
         <div className='section-header' style={{flexDirection: 'row-reverse'}}>
-            <ContentHeaderItem text="CONTACT" direction='left'/>
+            <ContactHeaderItem/>
         </div>
         <div className='section-content-contact'>
-        <ContactItem />
+        <ContactItem/>
         </div>
       </section>
     </div>
