@@ -26,7 +26,7 @@ function ContentSection() {
                                                                 I have a deep passion for creating software and specialize in developping machine learning solutions for targeted applications."/>
             <AboutTextItem style={{marginBottom: '24px'}} text="I currently work for Ericsson, where I mainly focus on building predictive AI models designed for forecasting and detecting anomalies in 5G network data.
                                                                 Through this work, I've co-authored and filed a patent application for an innovative approach to mobile traffic prediction."/>
-            <AboutTextItem style={{marginBottom: '24px'}} text="Outside of work, I love keeping up to date with all the latest advancements in AI.
+            <AboutTextItem style={{marginBottom: '24px'}} text="Outside of work, I love keeping myself up to date with all the latest advancements in AI.
                                                                 I also enjoy learning new tools and creating other types of software. 
                                                                 Recently, I've developed a strong passion for web development, hence the reason you are able to read this now!
                                                                 Finally (and perhaps more importantly...), I'm a huge football fan! &#x26BD;"/>
