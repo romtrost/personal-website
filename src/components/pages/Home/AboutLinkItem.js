@@ -25,35 +25,30 @@ function AboutLinkItem(props) {
                   transition={{duration: 0.5, delay: 0.3, ease: [0.1, 0.4, 0.2, 1.0]}}>
                   <FontAwesomeIcon icon={faArrowRight} size="xl"/>
       </motion.div>
-      <motion.div className="linkIcon"
+      <motion.a className="linkIcon"
                   variants={{hidden: { y: 25, opacity: 0, scale: 1 }, visible: { y: 0, opacity: 1, scale: 1 },}}
                   initial="hidden"
                   animate={mainControls}
                   transition={{duration: 0.5, delay: 0.5, ease: [0.1, 0.4, 0.2, 1.0]}}
-                  >
-                  <FontAwesomeIcon icon={faGithub} size="xl"/>
-      </motion.div>
-      <motion.div className="linkIcon"
-                  variants={{hidden: { y: 25, opacity: 0, scale: 1 }, visible: { y: 0, opacity: 1, scale: 1 },}}
-                  initial="hidden"
-                  animate={mainControls}
-                  transition={{duration: 0.5, delay: 0.6, ease: [0.1, 0.4, 0.2, 1.0]}}>
+                  href="https://www.linkedin.com/in/romain-trost-9a3955197/">
                   <FontAwesomeIcon icon={faLinkedin} size="xl"/>
-      </motion.div>
-      <motion.div className="linkIcon"
+      </motion.a>
+      <motion.a className="linkIcon"
                   variants={{hidden: { y: 25, opacity: 0, scale: 1 }, visible: { y: 0, opacity: 1, scale: 1 },}}
                   initial="hidden"
                   animate={mainControls}
-                  transition={{duration: 0.5, delay: 0.7, ease: [0.1, 0.4, 0.2, 1.0]}}>
-                  <FontAwesomeIcon icon={faFile} size="xl"/>
-      </motion.div>
-      <motion.div className="linkIcon"
+                  transition={{duration: 0.5, delay: 0.6, ease: [0.1, 0.4, 0.2, 1.0]}}
+                  href="https://github.com/romtrost">
+                  <FontAwesomeIcon icon={faGithub} size="xl"/>
+      </motion.a>
+      <motion.a className="linkIcon"
                   variants={{hidden: { y: 25, opacity: 0, scale: 1 }, visible: { y: 0, opacity: 1, scale: 1 },}}
                   initial="hidden"
                   animate={mainControls}
-                  transition={{duration: 0.5, delay: 0.8, ease: [0.1, 0.4, 0.2, 1.0]}}>
+                  transition={{duration: 0.5, delay: 0.7, ease: [0.1, 0.4, 0.2, 1.0]}}
+                  href="mailto:romainltrost@hotmail.com">
                   <FontAwesomeIcon icon={faEnvelope} size="xl"/>
-      </motion.div>
+      </motion.a>
     </div>
   );
 }

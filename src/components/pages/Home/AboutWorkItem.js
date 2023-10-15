@@ -36,11 +36,11 @@ function AboutToolItem(props) {
         <AboutTool text="SQL"
                    width="60px"
                    delay="0.4"/>
-        <AboutTool text="GitHub"
+        <AboutTool text="GitLab"
                    width="90px"
                    delay="0.5"/>
-        <AboutTool text="AWS"
-                   width="70px"
+        <AboutTool text="Git"
+                   width="50px"
                    delay="0.6"/>
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
@@ -55,14 +55,28 @@ function AboutToolItem(props) {
                    delay="0.5"/>
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
-        <AboutTool text="Tensorflow"
-                   width="130px"
-                   delay="0.3"/>
         <AboutTool text="Pytorch"
                    width="100px"
-                   delay="0.4"/>
+                   delay="0.3"/>
         <AboutTool text="Jira"
                    width="60px"
+                   delay="0.4"/>
+        <AboutTool text="Jenkins"
+                   width="80px"
+                   delay="0.5"/>
+        <AboutTool text="AWS"
+                   width="60px"
+                   delay="0.6"/>
+      </div>
+      <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
+        <AboutTool text="Typescript"
+                   width="110px"
+                   delay="0.3"/>
+        <AboutTool text="HTML"
+                   width="60px"
+                   delay="0.4"/>
+        <AboutTool text="AngularJS"
+                   width="110px"
                    delay="0.5"/>
       </div>
     </div>

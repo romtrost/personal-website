@@ -32,26 +32,37 @@ function AboutFunItem(props) {
         <AboutTool text="Javascript"
                    width="110px"
                    delay="0.3"/>
-        <AboutTool text="Typescript"
-                   width="110px"
-                   delay="0.4"/>
         <AboutTool text="HTML"
                    width="60px"
+                   delay="0.4"/>
+        <AboutTool text="ReactJS"
+                   width="90px"
                    delay="0.5"/>
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
-        <AboutTool text="React"
-                   width="70px"
-                   delay="0.3"/>
         <AboutTool text="C & C++"
                    width="90px"
-                   delay="0.4"/>
+                   delay="0.3"/>
         <AboutTool text="C#"
                    width="50px"
-                   delay="0.5"/>
+                   delay="0.4"/>
         <AboutTool text="Unity"
                    width="60px"
+                   delay="0.5"/>
+        <AboutTool text="Github"
+                   width="90px"
                    delay="0.6"/>
+      </div>
+      <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
+        <AboutTool text="GPT 3.5 & 4"
+                   width="120px"
+                   delay="0.3"/>
+        <AboutTool text="Llama"
+                   width="70px"
+                   delay="0.4"/>
+        <AboutTool text="DALL-E 2"
+                   width="100px"
+                   delay="0.5"/>
       </div>
     </div>
   );

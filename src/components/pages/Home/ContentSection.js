@@ -21,15 +21,15 @@ function ContentSection() {
         </div> 
         <div className='section-content-about'>
           <div>
-            <AboutTextItem style={{marginBottom: '24px'}} text="Hey! I'm Bob, if you haven't already gathered that by now. 
-                                                                I'm a painter turned software engineer from Daytona, Florida. 
-                                                                I specialize in the backend, primarily Node and Rust, but love building with whatever tools are right for the job."/>
-            <AboutTextItem style={{marginBottom: '24px'}} text="Hey! I'm Bob, if you haven't already gathered that by now. 
-                                                                I'm a painter turned software engineer from Daytona, Florida. 
-                                                                I specialize in the backend, primarily Node and Rust, but love building with whatever tools are right for the job."/>
-            <AboutTextItem style={{marginBottom: '24px'}} text="Hey! I'm Bob, if you haven't already gathered that by now. 
-                                                                I'm a painter turned software engineer from Daytona, Florida. 
-                                                                I specialize in the backend, primarily Node and Rust, but love building with whatever tools are right for the job."/>
+            <AboutTextItem style={{marginBottom: '24px'}} text="Hey! I'm Romain, a data scientist and tech enthusiast from Belgium. 
+                                                                I have a deep passion for creating software and specialize in developping Machine Learning solutions for targeted applications."/>
+            <AboutTextItem style={{marginBottom: '24px'}} text="I currently work for Ericsson, where I primarily focus on building predictive AI models designed for forecasting and detecting anomalies in 5G network data."/>
+            <AboutTextItem style={{marginBottom: '24px'}} text="Outside of work, I love keeping up to date with all the latest advancements in AI.
+                                                                I also enjoy learning new tools and creating other types of software. 
+                                                                Recently, I've developed a strong passion for web development, hence the reason you are able to read this now!
+                                                                Finally (and perhaps more importantly...), I'm a huge football fan! &#x26BD;"/>
+            <AboutTextItem style={{marginBottom: '24px'}} text="I'm constantly on the lookout for captivating prospects that allow me to combine my passion for AI and software development. 
+                                                                If you come across any opportunities that match my interests, I'd love to connect!"/>
             <div style ={{marginBottom: '24px', display: "flex", alignItems: "center"}}>
               <AboutTextItem style={{fontWeight: 500, color: '#ffffff'}} text="My links"/>
               <AboutLinkItem/>
