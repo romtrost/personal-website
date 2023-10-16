@@ -13,7 +13,7 @@ function HeroSection() {
   });
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
   const background2Y = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "750%"]);
 
   console.log(backgroundY)
   console.log(textY)
