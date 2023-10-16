@@ -32,7 +32,7 @@ function ProjectItem2(props) {
                     delay: 0.3, 
                     ease: [0.1, 0.4, 0.2, 1.0]}}>
                   <motion.img
-                    src='/images/spotify.jpg'
+                    src={props.src}
                     style={{
                       width: '100%',
                       height: '100%',
@@ -41,7 +41,8 @@ function ProjectItem2(props) {
                   />
       </motion.div> 
       <div>
-        <ProjectsHeader1 text={props.name}/>
+        <ProjectsHeader1 text={props.name}
+                         link={props.link}/>
         <ProjectsHeader2 text={props.tools}/>
         <ProjectsText style={{marginTop: '30px'}}
                       text={props.description}

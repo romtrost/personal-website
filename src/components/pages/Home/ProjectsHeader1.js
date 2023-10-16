@@ -43,7 +43,8 @@ function ProjectsHeader1(props) {
                     delay: 0.4,
                     ease: 'easeInOut'
                   }}/>
-      <motion.div className="linkIcon-projects"
+      <motion.a className="linkIcon-projects"
+                href={props.link}
                   variants={{
                     hidden: { y: 25, opacity: 0, scale: 1 },
                     visible: { y: 0, opacity: 1, scale: 1 },
@@ -56,7 +57,7 @@ function ProjectsHeader1(props) {
                     ease: [0.1, 0.4, 0.2, 1.0]
                   }}>
                     <FontAwesomeIcon icon={faGithub} size="xl"/>
-      </motion.div>
+      </motion.a>
     </div>
 
   );
