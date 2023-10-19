@@ -188,6 +188,7 @@
 
 .contact-email {
   color: #ffffff;
+  cursor: pointer;
 }
 
 .contact-email:hover {

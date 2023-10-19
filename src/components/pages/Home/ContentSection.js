@@ -56,7 +56,7 @@ function ContentSection() {
                                      aimed at enhancing the performance and efficiency of Large Language Models (LLMs) 
                                      for addressing complex questions that require advanced reasoning capabilities.
                                      (FrugalGPT/CoT)"/>
-          <ProjectItem2 src='/images/projects/spotify.jpg'
+          <ProjectItem2 src='/images/projects/spotify_orange.png'
                         link='https://github.com/romtrost/Spotify-Music-Recommender-System'
                         name="Spotify Music Recommender"
                         tools="Python - Spotify API - Scikit-learn"
