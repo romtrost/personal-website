@@ -62,7 +62,7 @@ function ProjectItem2(props) {
         <ProjectsHeader1 text={props.name}
                          link={props.link}/>
         <ProjectsHeader2 text={props.tools}/>
-        <ProjectsText style={{marginTop: '30px'}}
+        <ProjectsText style={{marginTop: '25px'}}
                       text={props.description}
                       iconColor='transparent'/>
         <ProjectsText style={{color: '#ff932e', fontWeight: '400', fontSize: '16px'}}
