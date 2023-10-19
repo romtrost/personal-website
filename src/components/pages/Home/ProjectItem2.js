@@ -22,15 +22,33 @@ function ProjectItem2(props) {
       <motion.div ref={ref} 
                   class="project-image-container"
                   variants={{
-                    hidden: { y: 50, opacity: 0, scale: 1 }, 
-                    visible: { y: 0, opacity: 1, scale: 1 },
+                    hidden: { 
+                      y: 50, 
+                      opacity: 0, 
+                      scale: 1 
+                    }, 
+                    visible: { 
+                      y: 0, 
+                      opacity: 1, 
+                      scale: 1, 
+                      transition: {  
+                        duration: 0.5, 
+                        delay: 0.3, 
+                        ease: [0.1, 0.4, 0.2, 1.0] 
+                      } 
+                    },
                   }}
                   initial="hidden"
                   animate={mainControls}
-                  transition={{
-                    duration: 0.5, 
-                    delay: 0.3, 
-                    ease: [0.1, 0.4, 0.2, 1.0]}}>
+                  whileHover={{ 
+                    scale: 1.05, 
+                    rotate: -5, 
+                    transition: {  
+                      delay: 0, 
+                      type: "spring", 
+                      stiffness: 400, 
+                      damping: 10 }
+                  }}>
                   <motion.img
                     src={props.src}
                     style={{
