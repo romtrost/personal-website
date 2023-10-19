@@ -44,10 +44,8 @@ function ProjectItem2(props) {
                     scale: 1.05, 
                     rotate: -5, 
                     transition: {  
-                      delay: 0, 
-                      type: "spring", 
-                      stiffness: 400, 
-                      damping: 10 }
+                      ease: [0.1, 0.4, 0.2, 1.0] 
+                    }
                   }}>
                   <motion.img
                     src={props.src}

@@ -141,6 +141,10 @@
   cursor: pointer;
 }
 
+.project-image-container:hover {
+  filter: drop-shadow(0px 0px 10px #ff932e);
+}
+
 .project-image-container > img {
   object-fit: cover;
 }
