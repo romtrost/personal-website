@@ -48,32 +48,40 @@ function ContentSection() {
           <ContentHeaderItem text="PROJECTS" direction='left'/>
         </div>
         <div className='section-content-projects'>
-          <ProjectItem1 src='/images/spotify.jpg'
+          <ProjectItem1 src='/images/projects/coins.png'
+                        link='https://github.com/romtrost/LLMs-in-banking'
+                        name="LLMs in Banking"
+                        tools="Python - OpenAI API - Transformers "
+                        description="A collaborative initiative with SEB, Sweden's largest bank, 
+                                     aimed at enhancing the performance and efficiency of Large Language Models (LLMs) 
+                                     for addressing complex questions that require advanced reasoning capabilities.
+                                     (FrugalGPT/CoT)"/>
+          <ProjectItem2 src='/images/projects/spotify.jpg'
                         link='https://github.com/romtrost/Spotify-Music-Recommender-System'
                         name="Spotify Music Recommender"
-                        tools="Python - Spotipy - Scikit-learn"
+                        tools="Python - Spotify API - Scikit-learn"
                         description="A Spotify music recommender system which uses content-based filtering 
                                      to recommend songs based on a user's playlist. This project involved accessing 
                                      song data and features using Spotify's API."/>
-          <ProjectItem2 src='/images/question.png'
+          <ProjectItem1 src='/images/projects/question_marks_1.png'
                         link='https://github.com/romtrost/Question-Word-Prediction'
                         name="Question Word Predictor"
                         tools="Python - TensorFlow - BERT - Stanza"
                         description="A Question Word Predictor (QWP) capable of identifying the missing question word in a question-answer pair.
                                      This project involved fine-tuning BERT to the SQuAD dataset through multi-label text classification,
                                      with the model achieving a 94% classification accuracy."/>
-          <ProjectItem1 src='/images/music.png'
+          <ProjectItem2 src='/images/projects/music_notes_2.png'
                         link='https://github.com/romtrost/Music-Genre-Classification'
                         name="Music Genre Classifier"
                         tools="Python - PyTorch - Librosa"
                         description="A music genre classifier which utilizes mel spectrograms derived from audio samples as image features
                                      to train a deep Convolutional Neural Network (CNN). The resulting model is able to classify music genres with an accuracy of 92%."/>
-          <ProjectItem2 src='/images/website.png'
+          <ProjectItem1 src='/images/projects/computers.png'
                         link='https://github.com/romtrost/personal-website'
                         name="Personal Website"
                         tools="JavaScript - HTML - ReactJS"
                         description="My personal website, which you happen to be scrolling through right now!."/>
-          <ProjectItem1 src='/images/cpu.png'
+          <ProjectItem2 src='/images/projects/CPUs.png'
                         link='https://github.com/romtrost/CPU-simulation'
                         name="CPU Simulator"
                         tools="C - MIPS - Hardware Design"
