@@ -45,13 +45,13 @@ function AboutToolItem(props) {
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
         <AboutTool text="Numpy"
-                   width="80px"
+                   width="90px"
                    delay="0.3"/>
-        <AboutTool text="Scikit-Learn"
-                   width="120px"
+        <AboutTool text="Scikit-learn"
+                   width="115px"
                    delay="0.4"/>
         <AboutTool text="Pandas"
-                   width="90px"
+                   width="85px"
                    delay="0.5"/>
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
@@ -70,7 +70,7 @@ function AboutToolItem(props) {
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
         <AboutTool text="Typescript"
-                   width="110px"
+                   width="120px"
                    delay="0.3"/>
         <AboutTool text="HTML"
                    width="60px"

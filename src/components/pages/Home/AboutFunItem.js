@@ -30,18 +30,18 @@ function AboutFunItem(props) {
       </motion.div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
         <AboutTool text="Javascript"
-                   width="110px"
+                   width="120px"
                    delay="0.3"/>
         <AboutTool text="HTML"
-                   width="60px"
+                   width="70px"
                    delay="0.4"/>
         <AboutTool text="ReactJS"
-                   width="90px"
+                   width="100px"
                    delay="0.5"/>
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
         <AboutTool text="C & C++"
-                   width="90px"
+                   width="100px"
                    delay="0.3"/>
         <AboutTool text="C#"
                    width="50px"
@@ -50,14 +50,14 @@ function AboutFunItem(props) {
                    width="60px"
                    delay="0.5"/>
         <AboutTool text="Github"
-                   width="90px"
+                   width="80px"
                    delay="0.6"/>
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
-        <AboutTool text="GPT 3.5 & 4"
+        <AboutTool text="OpenAI API"
                    width="120px"
                    delay="0.3"/>
-        <AboutTool text="Llama"
+        <AboutTool text="GPT 4"
                    width="70px"
                    delay="0.4"/>
         <AboutTool text="DALL-E 2"
