@@ -34,13 +34,13 @@ function AboutToolItem(props) {
                    width="90px"
                    delay="0.3"/>
         <AboutTool text="SQL"
-                   width="60px"
+                   width="50px"
                    delay="0.4"/>
         <AboutTool text="GitLab"
-                   width="90px"
+                   width="70px"
                    delay="0.5"/>
-        <AboutTool text="Git"
-                   width="50px"
+        <AboutTool text="Docker"
+                   width="80px"
                    delay="0.6"/>
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
@@ -67,6 +67,14 @@ function AboutToolItem(props) {
         <AboutTool text="AWS"
                    width="60px"
                    delay="0.6"/>
+      </div>
+      <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
+        <AboutTool text="SageMaker"
+                    width="120px"
+                    delay="0.3"/>
+        <AboutTool text="Apache Airflow"
+                    width="150px"
+                    delay="0.4"/>        
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
         <AboutTool text="Typescript"

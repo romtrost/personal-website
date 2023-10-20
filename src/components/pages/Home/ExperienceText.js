@@ -16,7 +16,7 @@ function ExperienceText(props) {
   return (
     <motion.p
       ref={ref}
-      style={props.style}
+      style={{marginBottom: '5px'}}
       variants={{
         hidden: { y: 25, opacity: 0, scale: 1 },
         visible: { y: 0, opacity: 1, scale: 1 },
@@ -28,7 +28,9 @@ function ExperienceText(props) {
         delay: 0.3,
         ease: [0.1, 0.4, 0.2, 1.0]
       }}>
-      {props.description}
+        <ul>
+          <li>{props.description}</li>
+        </ul>
     </motion.p>
   );
 }

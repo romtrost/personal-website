@@ -29,40 +29,43 @@ function AboutFunItem(props) {
                   </p>
       </motion.div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
-        <AboutTool text="Javascript"
-                   width="120px"
-                   delay="0.3"/>
-        <AboutTool text="HTML"
-                   width="70px"
-                   delay="0.4"/>
-        <AboutTool text="ReactJS"
-                   width="100px"
-                   delay="0.5"/>
-      </div>
-      <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
-        <AboutTool text="C & C++"
-                   width="100px"
-                   delay="0.3"/>
-        <AboutTool text="C#"
-                   width="50px"
-                   delay="0.4"/>
-        <AboutTool text="Unity"
-                   width="60px"
-                   delay="0.5"/>
-        <AboutTool text="Github"
-                   width="80px"
-                   delay="0.6"/>
-      </div>
-      <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
         <AboutTool text="OpenAI API"
                    width="120px"
                    delay="0.3"/>
         <AboutTool text="GPT 4"
                    width="70px"
                    delay="0.4"/>
-        <AboutTool text="DALL-E 2"
+        <AboutTool text="DALL-E 3"
                    width="100px"
                    delay="0.5"/>
+      </div>
+      <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
+        <AboutTool text="Javascript"
+                   width="120px"
+                   delay="0.3"/>
+        <AboutTool text="CSS"
+                   width="55px"
+                   delay="0.4"/>
+        <AboutTool text="ReactJS"
+                   width="100px"
+                   delay="0.5"/>
+      </div>
+      <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
+        <AboutTool text="C"
+                   width="40px"
+                   delay="0.3"/>
+        <AboutTool text="C++"
+                   width="60px"
+                   delay="0.4"/>
+        <AboutTool text="C#"
+                   width="50px"
+                   delay="0.5"/>
+        <AboutTool text="Unity"
+                   width="60px"
+                   delay="0.6"/>
+        <AboutTool text="Github"
+                   width="80px"
+                   delay="0.7"/>
       </div>
     </div>
   );
