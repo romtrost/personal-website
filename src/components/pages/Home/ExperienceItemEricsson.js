@@ -25,7 +25,7 @@ function ExperienceItemEricsson(props) {
       */}
       <ExperienceText description="Engineered a machine learning tool able to automatically detect anomalies within 
                                    system log text data, designed to streamline and expedite code troubleshooting.
-                                   Built a website interface and dashboard to enable developpers and troubleshooters to use 
+                                   Additionally, built a website interface and dashboard to enable developpers and troubleshooters to use 
                                    the tool effectively."/>
       <ExperienceText description="Integrated my contributions into the company's MLOps infrastructure as well-structured pipelines."/>
       <ExperienceText description="Worked as part of a global and diverse Data Science team, fostering international collaboration."/>
