@@ -17,7 +17,7 @@ function AboutToolItem(props) {
   }, [isInView]);
 
   return (
-    <div style={{marginBottom: "50px"}}>
+    <div style={{marginBottom: "40px"}}>
       <motion.div ref={ref}
                   style = {{display: "flex", alignItems: "center", marginBottom: '14px'}}
                   variants={{hidden: { y: 25, opacity: 0, scale: 1 }, visible: { y: 0, opacity: 1, scale: 1 },}}
