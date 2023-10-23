@@ -25,7 +25,7 @@ function ProjectPopup(props) {
     <motion.div className='project-pop-up'
                 initial={{ }}
                 animate={{
-                  rotate: [5, -1, 0], 
+                  rotate: props.rotate, 
                 }}
                 transition={{  
                   duration: 0.5, 

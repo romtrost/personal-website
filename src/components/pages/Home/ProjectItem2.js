@@ -72,6 +72,7 @@ function ProjectItem2(props) {
                       iconColor='#ff932e'/>
         <ProjectPopup trigger={buttonPopUp}
                       setTrigger={setButtonPopPup}
+                      rotate={[-5, 1, 0]}
                       src={props.src}
                       title={props.name}
                       tools={props.tools}
