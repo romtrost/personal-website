@@ -77,15 +77,12 @@ function AboutToolItem(props) {
                     delay="0.4"/>        
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
-        <AboutTool text="Typescript"
-                   width="120px"
+        <AboutTool text="Angular"
+                   width="90px"
                    delay="0.3"/>
-        <AboutTool text="HTML"
-                   width="60px"
+        <AboutTool text="Elasticsearch"
+                   width="140px"
                    delay="0.4"/>
-        <AboutTool text="AngularJS"
-                   width="110px"
-                   delay="0.5"/>
       </div>
     </div>
   );

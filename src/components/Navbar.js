@@ -32,37 +32,37 @@ function Navbar() {
   }, []);
 
   return (
-    <>
-      <div className='navbar'>
-        <ul className='nav-menu'>
-          <li className='nav-item'>
-            <Link to='hero' className='nav-links' spy={true} smooth={true} offset={0} duration={500} onClick={handleClick}>
-              HOME
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link to='about' className='nav-links' spy={true} smooth={true} offset={0} duration={500} onClick={handleClick}>
-              ABOUT
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link to='projects' className='nav-links' spy={true} smooth={true} offset={0} duration={500} onClick={handleClick}>
-              PROJECTS
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link to='experience' className='nav-links' spy={true} smooth={true} offset={0} duration={500} onClick={handleClick}>
-              EXPERIENCE
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link to='contact' className='nav-links' spy={true} smooth={true} offset={0} duration={500} onClick={handleClick}>
-              CONTACT
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </>
+    
+    <div className='navbar'>
+      <ul className='nav-menu'>
+        <li className='nav-item'>
+          <Link to='hero' className='nav-links' spy={true} smooth={true} offset={0} duration={500} onClick={handleClick}>
+            HOME
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link to='about' className='nav-links' spy={true} smooth={true} offset={0} duration={500} onClick={handleClick}>
+            ABOUT
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link to='projects' className='nav-links' spy={true} smooth={true} offset={0} duration={500} onClick={handleClick}>
+            PROJECTS
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link to='experience' className='nav-links' spy={true} smooth={true} offset={0} duration={500} onClick={handleClick}>
+            EXPERIENCE
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link to='contact' className='nav-links' spy={true} smooth={true} offset={0} duration={500} onClick={handleClick}>
+            CONTACT
+          </Link>
+        </li>
+      </ul>
+    </div>
+    
   )
 }
 

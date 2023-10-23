@@ -1,0 +1,93 @@
+.project-pop-up {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 98;
+}
+
+.project-pop-up-inner {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  max-width: 800px;
+  background-color: #232323;
+  border-radius: 7px;
+}
+
+.project-pop-up-image {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-pop-up-image > img {
+  object-fit: cover;
+  border-top-left-radius: 7px; 
+  border-top-right-radius: 7px; 
+  width: 100%;
+  height: 100%;
+}
+
+.project-pop-up-text {
+  height: 70%;
+  align-items: center;
+  padding: 2rem;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px; /* Adjust this value to position the button as desired */
+  right: 10px; /* Adjust this value to position the button as desired */
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.project-pop-up-text > h2 {
+  font-size: 33px;
+  text-align: left;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.project-pop-up-text > h3 {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 400;
+  color: #ff932e;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.project-pop-up-text > h4 {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 250;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.link-section {
+  color: #ff932e;
+  margin-top: 25px;
+}
+
+.link-text {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 400;
+  color: #ff932e;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.link-text:hover {
+  text-decoration: underline;
+}

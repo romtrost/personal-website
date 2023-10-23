@@ -40,15 +40,18 @@ function AboutFunItem(props) {
                    delay="0.5"/>
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
+        <AboutTool text="React"
+                   width="80px"
+                   delay="0.3"/>
         <AboutTool text="Javascript"
                    width="120px"
-                   delay="0.3"/>
+                   delay="0.4"/>
+        <AboutTool text="HTML"
+                   width="65px"
+                   delay="0.5"/>
         <AboutTool text="CSS"
                    width="55px"
-                   delay="0.4"/>
-        <AboutTool text="ReactJS"
-                   width="100px"
-                   delay="0.5"/>
+                   delay="0.6"/>
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
         <AboutTool text="C"

@@ -4,7 +4,7 @@
   height: 50px;
   width: 100%;
   background-color: transparent; /* Set your desired background color */
-  z-index: 999; /* Adjust the z-index value as needed to make it overlay other content */
+  z-index: 99; /* Adjust the z-index value as needed to make it overlay other content */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@
 }
 
 .nav-item {
-  height: 80px;
+  height: 100%;
   cursor: pointer;
 }
 

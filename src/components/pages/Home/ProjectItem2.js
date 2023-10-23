@@ -1,14 +1,17 @@
-import React, { useEffect, useRef }  from 'react';
+import React, { useEffect, useRef, useState }  from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import ProjectsHeader1 from './ProjectsHeader1';
 import ProjectsHeader2 from './ProjectsHeader2';
 import ProjectsText from './ProjectsText';
+import ProjectPopup from './ProjectPopup';
 
 function ProjectItem2(props) {
 
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true})
   const mainControls = useAnimation();
+
+  const [buttonPopUp, setButtonPopPup] = useState(false);
 
   useEffect(() => {
     if (isInView) {
@@ -21,6 +24,7 @@ function ProjectItem2(props) {
     <div className='project-container'>
       <motion.div ref={ref} 
                   class="project-image-container"
+                  onClick={() => setButtonPopPup(true)}
                   variants={{
                     hidden: { 
                       y: 50, 
@@ -61,11 +65,19 @@ function ProjectItem2(props) {
                          link={props.link}/>
         <ProjectsHeader2 text={props.tools}/>
         <ProjectsText style={{marginTop: '25px'}}
-                      text={props.description}
+                      text={props.summary}
                       iconColor='transparent'/>
         <ProjectsText style={{color: '#ff932e', fontWeight: '400', fontSize: '16px'}}
                       text='Learn more '
                       iconColor='#ff932e'/>
+        <ProjectPopup trigger={buttonPopUp}
+                      setTrigger={setButtonPopPup}
+                      src={props.src}
+                      title={props.name}
+                      tools={props.tools}
+                      description1={props.description1}
+                      description2={props.description2}
+                      link={props.link}/>
       </div>
     </div>
 
