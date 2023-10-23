@@ -31,7 +31,7 @@ function ProjectsLearnMore(props) {
                   ease: [0.1, 0.4, 0.2, 1.0]
                 }}>
       <a className='projects-item-learn-more-text'>
-                    Learn more <FontAwesomeIcon color="#ff932e" icon={faArrowRight} size="sm"/>
+                    Learn more<FontAwesomeIcon style={{marginLeft:'5px'}}color="#ff932e" icon={faArrowRight} size="sm"/>
       </a>
     </motion.div>
 
