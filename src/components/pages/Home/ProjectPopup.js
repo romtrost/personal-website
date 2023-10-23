@@ -22,19 +22,19 @@ function ProjectPopup(props) {
 
   return (props.trigger) ? (
 
-    <motion.div className='project-pop-up'
-                initial={{ }}
-                animate={{
-                  rotate: props.rotate, 
-                }}
-                transition={{  
-                  duration: 0.5, 
-                  ease: [0.1, 0.4, 0.2, 1.0] 
-                }}>
-      <div className='project-pop-up-inner'>
-        <div className='close-button' onClick={() => props.setTrigger(false)}>
-          <FontAwesomeIcon icon={faTimes} size="l"/>
-        </div>
+    <div className='project-pop-up'>
+      <div className='close-button' onClick={() => props.setTrigger(false)}>
+        <FontAwesomeIcon icon={faTimes} size="l"/>
+      </div>
+      <motion.div 
+        className='project-pop-up-inner'
+        animate={{
+          rotate: props.rotate, 
+        }}
+        transition={{  
+          duration: 0.5, 
+          ease: [0.1, 0.4, 0.2, 1.0] 
+        }}>
         <div className='project-pop-up-image'>
           <img src={props.src}/>
         </div>
@@ -60,8 +60,8 @@ function ProjectPopup(props) {
           
         </div>
         {props.children}
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
 
   ) : null;
 }
