@@ -1,4 +1,5 @@
-import React, { useEffect, useRef }  from 'react';
+import React, { useEffect }  from 'react';
+import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -21,7 +22,15 @@ function ProjectPopup(props) {
 
   return (props.trigger) ? (
 
-    <div className='project-pop-up'>
+    <motion.div className='project-pop-up'
+                initial={{ }}
+                animate={{
+                  rotate: [5, -1, 0], 
+                }}
+                transition={{  
+                  duration: 0.5, 
+                  ease: [0.1, 0.4, 0.2, 1.0] 
+                }}>
       <div className='project-pop-up-inner'>
         <div className='close-button' onClick={() => props.setTrigger(false)}>
           <FontAwesomeIcon icon={faTimes} size="l"/>
@@ -52,7 +61,7 @@ function ProjectPopup(props) {
         </div>
         {props.children}
       </div>
-    </div>
+    </motion.div>
 
   ) : null;
 }
