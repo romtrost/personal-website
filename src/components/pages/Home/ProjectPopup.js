@@ -39,24 +39,55 @@ function ProjectPopup(props) {
           <img src={props.src}/>
         </div>
         <div className='project-pop-up-text'>
-          <h2>
+          <motion.h2  initial={{ y: 50, opacity: 0, scale: 1 }}
+                      animate={{ y: 0, opacity: 1, scale: 1 }}
+                      transition={{
+                        duration: 0.5,
+                        delay: 0.1,
+                        ease: [0.1, 0.4, 0.2, 1.0]
+                      }}>
             {props.title}
-          </h2>
-          <h3>
+          </motion.h2>
+          <motion.h3  initial={{ y: 50, opacity: 0, scale: 1 }}
+                      animate={{ y: 0, opacity: 1, scale: 1 }}
+                      transition={{
+                        duration: 0.5,
+                        delay: 0.15,
+                        ease: [0.1, 0.4, 0.2, 1.0]
+                      }}>
             {props.tools}
-          </h3>
-          <h4>
+          </motion.h3>
+          <motion.h4  initial={{ y: 50, opacity: 0, scale: 1 }}
+                      animate={{ y: 0, opacity: 1, scale: 1 }}
+                      transition={{
+                        duration: 0.5,
+                        delay: 0.2,
+                        ease: [0.1, 0.4, 0.2, 1.0]
+                      }}>
             {props.description1}
-          </h4>
-          <h4>
+          </motion.h4>
+          <motion.h4  initial={{ y: 50, opacity: 0, scale: 1 }}
+                      animate={{ y: 0, opacity: 1, scale: 1 }}
+                      transition={{
+                        duration: 0.5,
+                        delay: 0.25,
+                        ease: [0.1, 0.4, 0.2, 1.0]
+                      }}>
             {props.description2}
-          </h4>
-          <div className='link-section'>
+          </motion.h4>
+          <motion.div className='link-section'
+                      initial={{ y: 50, opacity: 0, scale: 1 }}
+                      animate={{ y: 0, opacity: 1, scale: 1 }}
+                      transition={{
+                        duration: 0.5,
+                        delay: 0.3,
+                        ease: [0.1, 0.4, 0.2, 1.0]
+                      }}>
             <FontAwesomeIcon icon={faGithub} size="l"/>
             <a className='link-text' href={props.link}>
               source code
             </a>
-          </div>
+          </motion.div>
           
         </div>
         {props.children}
