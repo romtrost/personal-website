@@ -29,7 +29,11 @@ function ContactText(props) {
                 ease: [0.1, 0.4, 0.2, 1.0]
               }}>
               Reach out by e-mail if you want to connect! 
-              You can also find me on <span style={{color: '#ff932e', fontWeight: '400'}}>Linkedin</span> if you prefer.
+              You can also find me on{' '}
+              <a className='contact-linkedin-text'
+                 href="https://www.linkedin.com/in/romain-trost-9a3955197/">Linkedin
+              </a> 
+              {' '}if you prefer.
     </motion.p>
     
 

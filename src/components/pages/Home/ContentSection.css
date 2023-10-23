@@ -215,6 +215,16 @@
   transition: all 0.2s ease-out;
 }
 
+.contact-linkedin-text {
+  color: #ff932e;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.contact-linkedin-text:hover {
+  text-decoration: underline;
+}
+
 .tool-container {
   background-color: #2c2c2c; 
   opacity: 1;
