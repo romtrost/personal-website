@@ -3,7 +3,7 @@ import { motion, useInView, useAnimation } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
-function ProjectsText(props) {
+function ProjectsSummary(props) {
 
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true})
@@ -17,9 +17,8 @@ function ProjectsText(props) {
 
   return (
 
-    <div ref={ref} className='projects-item-text'>
-      <motion.h2  style={props.style}
-                  variants={{
+    <div ref={ref} className='projects-item-summary'>
+      <motion.h2  variants={{
                     hidden: { y: 25, opacity: 0, scale: 1 },
                     visible: { y: 0, opacity: 1, scale: 1 },
                   }}
@@ -30,11 +29,11 @@ function ProjectsText(props) {
                     delay: 0.3,
                     ease: [0.1, 0.4, 0.2, 1.0]
                   }}>
-                    {props.text} <FontAwesomeIcon color={props.iconColor} icon={faArrowRight} size="sm"/>
+                    {props.text} <FontAwesomeIcon color="transparent" icon={faArrowRight} size="sm"/>
       </motion.h2>
     </div>
 
   );
 }
 
-export default ProjectsText;
+export default ProjectsSummary;

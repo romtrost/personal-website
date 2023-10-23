@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState }  from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import ProjectsHeader1 from './ProjectsHeader1';
 import ProjectsHeader2 from './ProjectsHeader2';
-import ProjectsText from './ProjectsText';
+import ProjectsSummary from './ProjectsSummary';
+import ProjectsLearnMore from './ProjectsLearnMore';
 import ProjectPopup from './ProjectPopup';
 
 function ProjectItem2(props) {
@@ -64,12 +65,10 @@ function ProjectItem2(props) {
         <ProjectsHeader1 text={props.name}
                          link={props.link}/>
         <ProjectsHeader2 text={props.tools}/>
-        <ProjectsText style={{marginTop: '25px'}}
-                      text={props.summary}
-                      iconColor='transparent'/>
-        <ProjectsText style={{color: '#ff932e', fontWeight: '400', fontSize: '16px'}}
-                      text='Learn more '
-                      iconColor='#ff932e'/>
+        <ProjectsSummary text={props.summary}/>
+        <div onClick={() => setButtonPopPup(true)}>
+          <ProjectsLearnMore/>
+        </div>
         <ProjectPopup trigger={buttonPopUp}
                       setTrigger={setButtonPopPup}
                       rotate={[-5, 1, 0]}

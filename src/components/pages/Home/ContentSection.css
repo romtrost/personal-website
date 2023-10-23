@@ -102,10 +102,28 @@
   margin-bottom: 10px;
 }
 
-.projects-item-text {
+.projects-item-summary {
   align-items: center; 
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.projects-item-learn-more {
+  text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 400;
+  color: #ff932e;
+}
+
+.projects-item-learn-more-text {
+  cursor: pointer;
+}
+
+.projects-item-learn-more-text:hover {
+  text-decoration: underline;
 }
 
 .projects-item-header-1 > h2 {
@@ -122,7 +140,7 @@
   color: #ff932e;
 }
 
-.projects-item-text > h2 {
+.projects-item-summary > h2 {
   font-size: 18px;
   text-align: left;
   font-weight: 250;
