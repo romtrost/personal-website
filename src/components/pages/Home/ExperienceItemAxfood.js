@@ -29,27 +29,30 @@ function ExperienceItemAxfood(props) {
         <AboutTool text="SQL"
                    width="50px"
                    delay="0.35"/>
+        <AboutTool text="Scikit-learn"
+                   width="115px"
+                   delay="0.4"/>
         <AboutTool text="BitBucket"
                    width="100px"
-                   delay="0.4"/>
+                   delay="0.45"/>
         <AboutTool text="SageMaker"
                     width="120px"
-                    delay="0.45"/>
+                    delay="0.5"/>
         <AboutTool text="AWS"
                    width="60px"
-                   delay="0.5"/>
+                   delay="0.55"/>
         <AboutTool text="Confluence"
                    width="120px"
-                   delay="0.55"/>
+                   delay="0.6"/>
         <AboutTool text="MongoDB"
                    width="100px"
-                   delay="0.6"/>
+                   delay="0.65"/>
         <AboutTool text="Apache Airflow"
                    width="150px"
-                   delay="0.65"/>
+                   delay="0.7"/>
         <AboutTool text="Jira"
                    width="50px"
-                   delay="0.7"/>
+                   delay="0.75"/>
       </div>
       <ExperienceLine delay="0.0"/>
     </div>

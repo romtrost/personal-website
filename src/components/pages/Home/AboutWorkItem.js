@@ -70,10 +70,10 @@ function AboutToolItem(props) {
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
         <AboutTool text="SageMaker"
-                    width="120px"
+                    width="130px"
                     delay="0.3"/>
         <AboutTool text="Apache Airflow"
-                    width="150px"
+                    width="160px"
                     delay="0.4"/>        
       </div>
       <div style ={{display: "flex", alignItems: "center", marginBottom: '14px'}}>
@@ -83,6 +83,9 @@ function AboutToolItem(props) {
         <AboutTool text="Elasticsearch"
                    width="140px"
                    delay="0.4"/>
+        <AboutTool text="JFrog"
+                   width="65px"
+                   delay="0.5"/>
       </div>
     </div>
   );
