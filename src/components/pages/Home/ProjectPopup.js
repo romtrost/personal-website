@@ -30,9 +30,10 @@ function ProjectPopup(props) {
         className='project-pop-up-inner'
         animate={{
           rotate: props.rotate, 
+          scale: [1.1, 0.99, 1]
         }}
         transition={{  
-          duration: 0.5, 
+          duration: 0.4, 
           ease: [0.1, 0.4, 0.2, 1.0] 
         }}>
         <div className='project-pop-up-image'>
