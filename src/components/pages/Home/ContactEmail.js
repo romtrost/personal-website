@@ -21,6 +21,9 @@ function ContactEmail(props) {
          href="mailto:romainltrost@hotmail.com"
          className='contact-email'
          style ={{
+           width: '30%',
+           marginLeft: '35%',
+           marginRight: '35%',
            display: "flex", 
            alignItems: "center",
            justifyContent: 'center',

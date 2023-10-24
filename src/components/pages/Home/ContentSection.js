@@ -56,8 +56,7 @@ function ContentSection() {
                         tools="Python - OpenAI API - Transformers "
                         summary="A collaborative initiative with SEB, Sweden's largest bank, 
                                      aimed at enhancing the performance and efficiency of Large Language Models (LLMs) 
-                                     for addressing complex questions that require advanced reasoning capabilities.
-                                     (FrugalGPT/CoT)"
+                                     for addressing complex questions that require advanced reasoning capabilities."
                         description1="A collaborative initiative with SEB, Sweden's largest bank, 
                                      aimed at enhancing the performance and efficiency of Large Language Models (LLMs) 
                                      for addressing complex questions that require advanced reasoning capabilities.

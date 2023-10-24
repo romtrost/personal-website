@@ -23,7 +23,7 @@ function AboutFunItem(props) {
                   initial="hidden"
                   animate={mainControls}
                   transition={{duration: 0.5, delay: 0.3, ease: [0.1, 0.4, 0.2, 1.0]}}>
-                  <FontAwesomeIcon icon={faFaceSmile} size="xl" style={{color: "#ff932e"}}/>
+                  <FontAwesomeIcon icon={faFaceSmile} size="xl" style={{color: "#ff932e", filter: 'drop-shadow(0px 0px 10px #ff932e)'}}/>
                   <p style ={{fontSize: '24px', fontWeight: 700, marginLeft: '10px'}}>
                   Use for fun
                   </p>
