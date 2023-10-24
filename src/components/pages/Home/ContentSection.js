@@ -91,7 +91,7 @@ function ContentSection() {
           <ProjectItem1 src='/images/projects/computers.png'
                         link='https://github.com/romtrost/personal-website'
                         name="Personal Website"
-                        tools="JavaScript - HTML - React"
+                        tools="JavaScript - HTML - React - DALL·E 2"
                         summary="My personal website, which you happen to be scrolling through right now!."/>
           <ProjectItem2 src='/images/projects/CPUs.png'
                         link='https://github.com/romtrost/CPU-simulation'

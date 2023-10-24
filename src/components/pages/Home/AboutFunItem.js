@@ -35,7 +35,7 @@ function AboutFunItem(props) {
         <AboutTool text="GPT 4"
                    width="70px"
                    delay="0.4"/>
-        <AboutTool text="DALL-E 3"
+        <AboutTool text="DALL·E 2"
                    width="100px"
                    delay="0.5"/>
       </div>
