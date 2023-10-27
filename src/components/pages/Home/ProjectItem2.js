@@ -77,6 +77,7 @@ function ProjectItem2(props) {
                       tools={props.tools}
                       description1={props.description1}
                       description2={props.description2}
+                      description3={props.description3}
                       link={props.link}/>
       </div>
     </div>

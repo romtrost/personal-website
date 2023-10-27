@@ -76,12 +76,21 @@ function ProjectPopup(props) {
                       }}>
             {props.description2}
           </motion.h4>
+          <motion.h4  initial={{ y: 50, opacity: 0, scale: 1 }}
+                      animate={{ y: 0, opacity: 1, scale: 1 }}
+                      transition={{
+                        duration: 0.5,
+                        delay: 0.3,
+                        ease: [0.1, 0.4, 0.2, 1.0]
+                      }}>
+            {props.description3}
+          </motion.h4>
           <motion.div className='link-section'
                       initial={{ y: 50, opacity: 0, scale: 1 }}
                       animate={{ y: 0, opacity: 1, scale: 1 }}
                       transition={{
                         duration: 0.5,
-                        delay: 0.3,
+                        delay: 0.35,
                         ease: [0.1, 0.4, 0.2, 1.0]
                       }}>
             <FontAwesomeIcon icon={faGithub} size="l"/>

@@ -57,17 +57,13 @@ function ContentSection() {
                         summary="A collaborative initiative with SEB, Sweden's largest bank, 
                                      aimed at enhancing the performance and efficiency of Large Language Models (LLMs) 
                                      for addressing complex questions that require advanced reasoning capabilities."
-                        description1="A collaborative initiative with SEB, Sweden's largest bank, 
-                                     aimed at enhancing the performance and efficiency of Large Language Models (LLMs) 
-                                     for addressing complex questions that require advanced reasoning capabilities.
-                                     A collaborative initiative with SEB, Sweden's largest bank, 
-                                     aimed at enhancing the performance and efficiency of Large Language Models (LLMs) 
-                                     for addressing complex questions that require advanced reasoning capabilities.
-                                     (FrugalGPT/CoT)"
-                        description2="A collaborative initiative with SEB, Sweden's largest bank, 
-                                     aimed at enhancing the performance and efficiency of Large Language Models (LLMs) 
-                                     for addressing complex questions that require advanced reasoning capabilities.
-                                     (FrugalGPT/CoT)"/>
+                        description1="The focus of this project was to provide SEB with a solution that enabled LLMs to solve
+                                      complex reasoning problems while mitigating the high costs that are often associated with LLM API requests."
+                        description2="Specifically, we implemented and combined two frameworks: Chain of Thought (CoT) and FrugalGPT. 
+                                      CoT facilitates LLMs in handling complex tasks by breaking down input prompts into multiple steps
+                                      while FrugalGPT enables dynamic selection among different OpenAI LLMs to optimize both performance and cost."
+                      description3="Our implementation demonstrated enhanced accuracy and cost reduction when assessed on various benchmark datasets taken from BIG-Bench Hard, 
+                                    outperforming GPT-4 using standard prompting." />
           <ProjectItem2 src='/images/projects/spotify_orange.png'
                         link='https://github.com/romtrost/Spotify-Music-Recommender-System'
                         name="Spotify Music Recommender"
