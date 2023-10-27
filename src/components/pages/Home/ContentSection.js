@@ -76,15 +76,22 @@ function ContentSection() {
                         description2="I used a large Spotify song dataset, on which I conducted data sampling to eliminate underrepresented genres.
                                       Feature engineering was performed to extract relevant song attributes, which were then one-hot encoded to yield a data feature set.
                                       I then used the Spotify API to retrieve my own playlist, which I turned into a vector representative of its songs' features.
-                                      Finally, I use this vector and cosine similarity to generate the 5 most similar songs from the data feature set."
+                                      Finally, I used this vector and cosine similarity to generate the 5 most similar songs from the data feature set."
                         description3="Upon analysis, the close resemblance of recommended songs to those in the playlist suggests strong performance by the content-based recommender system."/>
           <ProjectItem1 src='/images/projects/question_marks_1.png'
                         link='https://github.com/romtrost/Question-Word-Prediction'
                         name="Question Word Predictor"
                         tools="Python - TensorFlow - BERT - Stanza"
                         summary="A Question Word Predictor (QWP) capable of identifying the missing question word in a question-answer pair.
-                                     This project involved fine-tuning BERT to the SQuAD dataset through multi-label text classification,
-                                     with the model achieving a 94% classification accuracy."/>
+                                 This project involved fine-tuning BERT to the SQuAD dataset through multi-label text classification,
+                                 with the model achieving a 94% classification accuracy."
+                        description1="..."
+                        description2="1) Created our unique dataset by masking the QW in each QA pair using automation from the SQuAD dataset
+                                      2) Preprocessed data through under sampling and labelled each data sampled with our masked QW
+                                      3) Split the dataset into train and test
+                                      4) Imported a pre-trained BERT model and fine-tuned it using our training data through multi-label text classification.
+                                      5) Tested the model on our test set, final accuracy of 94% achieved."
+                        description3="Upon analysis, the close resemblance of recommended songs to those in the playlist suggests strong performance by the content-based recommender system."/>
           <ProjectItem2 src='/images/projects/music_notes_2.png'
                         link='https://github.com/romtrost/Music-Genre-Classification'
                         name="Music Genre Classifier"
@@ -95,7 +102,7 @@ function ContentSection() {
                         link='https://github.com/romtrost/personal-website'
                         name="Personal Website"
                         tools="JavaScript - HTML - React - DALL·E 2"
-                        summary="My personal website, which you happen to be scrolling through right now!."/>
+                        summary="My personal website, which you happen to be scrolling through right now!"/>
           <ProjectItem2 src='/images/projects/CPUs.png'
                         link='https://github.com/romtrost/CPU-simulation'
                         name="CPU Simulator"
