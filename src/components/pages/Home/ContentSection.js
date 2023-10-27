@@ -55,22 +55,29 @@ function ContentSection() {
                         name="LLMs in Banking"
                         tools="Python - OpenAI API - Transformers "
                         summary="A collaborative initiative with SEB, Sweden's largest bank, 
-                                     aimed at enhancing the performance and efficiency of Large Language Models (LLMs) 
-                                     for addressing complex questions that require advanced reasoning capabilities."
+                                 aimed at enhancing the performance and efficiency of Large Language Models (LLMs) 
+                                 for addressing complex questions that require advanced reasoning capabilities."
                         description1="The focus of this project was to provide SEB with a solution that enabled LLMs to solve
                                       complex reasoning problems while mitigating the high costs that are often associated with LLM API requests."
                         description2="Specifically, we implemented and combined two frameworks: Chain of Thought (CoT) and FrugalGPT. 
                                       CoT facilitates LLMs in handling complex tasks by breaking down input prompts into multiple steps
                                       while FrugalGPT enables dynamic selection among different OpenAI LLMs to optimize both performance and cost."
-                      description3="Our implementation demonstrated enhanced accuracy and cost reduction when assessed on various benchmark datasets taken from BIG-Bench Hard, 
-                                    outperforming GPT-4 using standard prompting." />
+                        description3="Our implementation demonstrated enhanced accuracy and cost reduction when assessed on various benchmark datasets taken from BIG-Bench Hard, 
+                                      outperforming GPT-4 using standard prompting."/>
           <ProjectItem2 src='/images/projects/spotify_orange.png'
                         link='https://github.com/romtrost/Spotify-Music-Recommender-System'
                         name="Spotify Music Recommender"
                         tools="Python - Spotify API - Scikit-learn"
                         summary="A Spotify music recommender system which uses content-based filtering 
-                                     to recommend songs based on a user's playlist. This project involved accessing 
-                                     song data and features using Spotify's API."/>
+                                 to recommend songs based on a user's playlist. This project involved accessing 
+                                 song data and features using Spotify's API."
+                        description1="In this project, I developed a recommender system that takes a Spotify playlist as input 
+                                      and suggests a curated selection of 5 songs based on the playlist's contents."
+                        description2="I used a large Spotify song dataset, on which I conducted data sampling to eliminate underrepresented genres.
+                                      Feature engineering was performed to extract relevant song attributes, which were then one-hot encoded to yield a data feature set.
+                                      I then used the Spotify API to retrieve my own playlist, which I turned into a vector representative of its songs' features.
+                                      Finally, I use this vector and cosine similarity to generate the 5 most similar songs from the data feature set."
+                        description3="Upon analysis, the close resemblance of recommended songs to those in the playlist suggests strong performance by the content-based recommender system."/>
           <ProjectItem1 src='/images/projects/question_marks_1.png'
                         link='https://github.com/romtrost/Question-Word-Prediction'
                         name="Question Word Predictor"
