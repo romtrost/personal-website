@@ -85,13 +85,12 @@ function ContentSection() {
                         summary="A Question Word Predictor (QWP) capable of identifying the missing question word in a question-answer pair.
                                  This project involved fine-tuning BERT to the SQuAD dataset through multi-label text classification,
                                  with the model achieving a 94% classification accuracy."
-                        description1="..."
-                        description2="1) Created our unique dataset by masking the QW in each QA pair using automation from the SQuAD dataset
-                                      2) Preprocessed data through under sampling and labelled each data sampled with our masked QW
-                                      3) Split the dataset into train and test
-                                      4) Imported a pre-trained BERT model and fine-tuned it using our training data through multi-label text classification.
-                                      5) Tested the model on our test set, final accuracy of 94% achieved."
-                        description3="Upon analysis, the close resemblance of recommended songs to those in the playlist suggests strong performance by the content-based recommender system."/>
+                        description1="This project involved building a multi-label text classifier able to identify the missing question word (QW) in a question-answer (QA) pair."
+                        description2="I developed scripts to construct a distinct dataset, wherein I masked the QW in each QA pair sourced from the SQuAD dataset and assigned it as a label for that specific QA pair.
+                                      After this, I preprocessed and cleaned the data using various techniques such as under-sampling. Next, I divided the dataset into train and test sets. 
+                                      Subsequently, I imported a pre-trained BERT model and fine-tuned it for multi-label text classification using our training data, 
+                                      where the model learned to associate each QW with its corresponding masked QA pair."
+                        description3="The final model was able to achieve an impressive 94% accuracy on our test set."/>
           <ProjectItem2 src='/images/projects/music_notes_2.png'
                         link='https://github.com/romtrost/Music-Genre-Classification'
                         name="Music Genre Classifier"
