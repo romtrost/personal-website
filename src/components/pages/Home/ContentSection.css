@@ -108,6 +108,7 @@
 }
 
 .projects-item-learn-more {
+  display: flex;
   text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -119,7 +120,7 @@
 
 .projects-item-learn-more-text {
   cursor: pointer;
-  z-index: 100;
+  z-index: 10;
 }
 
 .projects-item-learn-more-text:hover {
@@ -212,6 +213,7 @@
 .contact-email {
   color: #ffffff;
   cursor: pointer;
+  z-index: 10;
 }
 
 .contact-email:hover {
@@ -224,6 +226,8 @@
   color: #ff932e;
   font-weight: 400;
   text-decoration: none;
+  z-index: 10;
+  margin: 0 5px;
 }
 
 .contact-linkedin-text:hover {
