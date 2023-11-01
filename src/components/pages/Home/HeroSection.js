@@ -1,8 +1,6 @@
 import React, { useRef }  from 'react';
 import { motion, useScroll, useTransform } from "framer-motion";
 import './HeroSection.css';
-import ShootingStarGenerator from '../../ShootingStarGenerator';
-import StaticStarGenerator from '../../StaticStarGenerator';
 
 function HeroSection() {
 
@@ -58,12 +56,6 @@ function HeroSection() {
                       A Data Scientist and Tech Enthusiast from Belgium
             </motion.p>
           </motion.div>
-          <ShootingStarGenerator 
-            backgroundY={backgroundY}
-          />
-          <StaticStarGenerator 
-            backgroundY={backgroundY}
-          />
           <motion.img
             src='/images/header-background.jpg'
             style={{

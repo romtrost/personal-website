@@ -119,6 +119,7 @@
 
 .projects-item-learn-more-text {
   cursor: pointer;
+  z-index: 100;
 }
 
 .projects-item-learn-more-text:hover {
@@ -157,6 +158,7 @@
   align-items: center;
   text-align: center;
   cursor: pointer;
+  z-index: 10;
 }
 
 .project-image-container:hover {
@@ -165,7 +167,6 @@
 
 .project-image-container > img {
   object-fit: cover;
-  z-index: 10;
 }
 
 .projects-header-line {
@@ -189,6 +190,7 @@
 .linkIcon {
   color: #ff932e;
   margin-left: 20px;
+  z-index: 10;
 }
 
 .linkIcon:hover {
@@ -198,6 +200,7 @@
 
 .linkIcon-projects {
   color: #ffffff;
+  z-index: 10;
 }
 
 .linkIcon-projects:hover {
