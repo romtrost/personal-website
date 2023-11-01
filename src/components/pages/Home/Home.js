@@ -15,7 +15,7 @@ function Home() {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const starsY = useTransform(scrollYProgress, [0, 1], ["10%", "0%"]);
+  const starsY = useTransform(scrollYProgress, [0, 1], ["10%", "-20%"]);
 
   return (
     <div ref={ref}>
