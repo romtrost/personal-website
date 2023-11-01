@@ -17,8 +17,6 @@ function Home() {
   });
   const starsY = useTransform(scrollYProgress, [0, 1], ["10%", "0%"]);
 
-  console.log("starsY", starsY)
-
   return (
     <div ref={ref}>
       <ShootingStarGenerator backgroundY={starsY}/>
