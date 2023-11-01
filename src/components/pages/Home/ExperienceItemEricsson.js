@@ -23,7 +23,7 @@ function ExperienceItemEricsson(props) {
       <ExperienceText description="Designed, built and benchmarked numerous deep learning forecasting models based on recent 
                                    research papers using real-world telecom time series data."/>      
       */}
-      <ExperienceText description="Engineered a machine learning tool able to automatically detect anomalies within 
+      <ExperienceText description="Engineered a machine learning LSTM-based tool able to automatically detect anomalies within 
                                    system log text data, designed to streamline and expedite code troubleshooting.
                                    Additionally, built a website interface and dashboard to enable developers and troubleshooters to use 
                                    the tool effectively."/>

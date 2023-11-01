@@ -81,11 +81,11 @@ function ContentSection() {
           <ProjectItem1 src='/images/projects/question_marks_1.png'
                         link='https://github.com/romtrost/Question-Word-Prediction'
                         name="Question Word Predictor"
-                        tools="Python - TensorFlow - BERT - Stanza"
-                        summary="A Question Word Predictor (QWP) capable of identifying the missing question word in a question-answer pair.
+                        tools="Python - BERT - Stanza"
+                        summary="A Question Word Predictor capable of identifying the missing question word in a question-answer pair.
                                  This project involved fine-tuning BERT to the SQuAD dataset through multi-label text classification,
-                                 with the model achieving a 94% classification accuracy."
-                        description1="This project involved building a multi-label text classifier able to identify the missing question word (QW) in a question-answer (QA) pair."
+                                 with the final model achieving a 94% test accuracy."
+                        description1="This project involved building a Question Word Predictor (QWP) able to identify the missing question word (QW) in a question-answer (QA) pair."
                         description2="I developed scripts to construct a distinct dataset, wherein I masked the QW in each QA pair sourced from the SQuAD dataset and assigned it as a label for that specific QA pair.
                                       After this, I preprocessed and cleaned the data using various techniques such as under-sampling. Next, I divided the dataset into train and test sets. 
                                       Subsequently, I imported a pre-trained BERT model and fine-tuned it for multi-label text classification using our training data, 
@@ -94,9 +94,15 @@ function ContentSection() {
           <ProjectItem2 src='/images/projects/music_notes_2.png'
                         link='https://github.com/romtrost/Music-Genre-Classification'
                         name="Music Genre Classifier"
-                        tools="Python - PyTorch - Librosa"
+                        tools="Python - PyTorch - TensorFlow - Librosa"
                         summary="A music genre classifier which utilizes mel spectrograms derived from audio samples as image features
-                                     to train a deep Convolutional Neural Network (CNN). The resulting model is able to classify music genres with an accuracy of 92%."/>
+                                 to train a deep Convolutional Neural Network (CNN). The resulting model is able to classify music genres with an accuracy of 92%."
+                        description1="This project entailed creating a CNN classifier for audio music genre identification."
+                        description2="We used the GTZAN dataset and preprocessed it by converting audio files into images using the librosa library to produce mel spectrograms and MFCCs from .wav files.
+                                      Additionally, we employed variational autoencoders as an oversampling technique to create more audio samples. 
+                                      For the core of our analysis, we implemented a CNN in TensorFlow, drawing inspiration from existing research papers to design the network architecture. 
+                                      This CNN was then trained using an Adam optimizer for hyperparameter optimization, with a focus on achieving the best model fit, using a sparse categorical cross-entropy loss function."
+                        description3="The CNN trained on 3-channel mel spectrograms achieved an accuracy of 92%."/>
           <ProjectItem1 src='/images/projects/computers.png'
                         link='https://github.com/romtrost/personal-website'
                         name="Personal Website"
