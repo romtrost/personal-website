@@ -107,7 +107,12 @@ function ContentSection() {
                         link='https://github.com/romtrost/personal-website'
                         name="Personal Website"
                         tools="JavaScript - HTML - React - DALL·E 2"
-                        summary="My personal website, which you happen to be scrolling through right now!"/>
+                        summary="My personal website, which you happen to be scrolling through right now!"
+                        description1="In this side project, I develop my own website to showcase my other projects, and provide other relevant information about me and my background."
+                        description2="I built the entire website from the ground up using the React framework, extensively working with JavaScript, HTML, and CSS. 
+                                      While drawing inspiration from other websites, I aimed to give my website a unique and cohesive theme by generating all its images using DALL·E 2.
+                                      Additionally, I incorporated the Framer Motion library to add captivating animations to the various web components, enhancing the website's interactivity and liveliness."
+                        description3="This website remains a continuous work in progress, as I intend to further refine my web development skills and feature new, exciting projects."/>
           <ProjectItem2 src='/images/projects/CPUs.png'
                         link='https://github.com/romtrost/CPU-simulation'
                         name="CPU Simulator"
