@@ -117,8 +117,13 @@ function ContentSection() {
                         link='https://github.com/romtrost/CPU-simulation'
                         name="CPU Simulator"
                         tools="C - MIPS - Hardware Design"
-                        summary="A 32 bit instruction CPU simulator built entirely using C and MIPS assembly code. 
-                                     The CPU is based on the Von Neumann architecture."/>                                  
+                        summary="A 32 bit instruction CPU simulator built entirely using C and MIPS assembly code. The CPU is based on the Von Neumann architecture."           
+                        description1="The aim of this project was to create a C program simulating the operation of a 32-bit instruction Von Neumann architecture CPU."
+                        description2="I wrote code to simulate every component of a CPU. 
+                                      This involved creating the low-level functionality of the Control Unit, responsible for fetching and decoding 32-bit instructions. 
+                                      I also designed functions to enable CPU registers to store and fetch from memory the required bits needed for future computations. 
+                                      Additionally, I implemented an Arithmetic Logic Unit function to carry out bit-level computations."
+                        description3="Crafting and executing tasks like squaring numbers and finding prime numbers within a specified range using a stream of 32-bit instructions demonstrated the program's intended performance."/>                       
         </div>
       </section>
       <section id='experience' className='section-wrapper' style={{paddingBottom: '4.8rem'}}>
