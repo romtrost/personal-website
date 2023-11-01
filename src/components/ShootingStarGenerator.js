@@ -66,7 +66,7 @@ function ShootingStarGenerator(props) {
 
   useEffect(() => {
     // Check if the number of stars exceeds 100 and remove the oldest stars
-    if (stars.length > 42) {
+    if (stars.length > 24) {
       setStars((prevState) => prevState.slice(100)); // Remove the oldest stars
     }
   }, [stars]);
