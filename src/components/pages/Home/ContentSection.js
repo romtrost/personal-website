@@ -50,7 +50,7 @@ function ContentSection() {
           <ContentHeaderItem text="PROJECTS" direction='left'/>
         </div>
         <div className='section-content-projects'>
-          <ProjectItem1 src='/images/projects/coins.png'
+          <ProjectItem1 src='/images/projects-section/coins.png'
                         link='https://github.com/romtrost/LLMs-in-banking'
                         name="LLMs in Banking"
                         tools="Python - OpenAI API - Transformers "
@@ -64,7 +64,7 @@ function ContentSection() {
                                       while FrugalGPT enables dynamic selection among different OpenAI LLMs to optimize both performance and cost."
                         description3="Our implementation demonstrated enhanced accuracy and cost reduction when assessed on various benchmark datasets taken from BIG-Bench Hard, 
                                       outperforming GPT-4 using standard prompting."/>
-          <ProjectItem2 src='/images/projects/spotify_orange.png'
+          <ProjectItem2 src='/images/projects-section/spotify_orange.png'
                         link='https://github.com/romtrost/Spotify-Music-Recommender-System'
                         name="Spotify Music Recommender"
                         tools="Python - Spotify API - Scikit-learn"
@@ -78,7 +78,7 @@ function ContentSection() {
                                       I then used the Spotify API to retrieve my own playlist, which I turned into a vector representative of its songs' features.
                                       Finally, I used this vector and cosine similarity to generate the 5 most similar songs from the data feature set."
                         description3="Upon analysis, the close resemblance of recommended songs to those in the playlist suggests strong performance by the content-based recommender system."/>
-          <ProjectItem1 src='/images/projects/question_marks_1.png'
+          <ProjectItem1 src='/images/projects-section/question_marks_1.png'
                         link='https://github.com/romtrost/Question-Word-Prediction'
                         name="Question Word Predictor"
                         tools="Python - BERT - Stanza"
@@ -91,7 +91,7 @@ function ContentSection() {
                                       Subsequently, I imported a pre-trained BERT model and fine-tuned it for multi-label text classification using our training data, 
                                       where the model learned to associate each QW with its corresponding masked QA pair."
                         description3="The final model was able to achieve an impressive 94% accuracy on our test set."/>
-          <ProjectItem2 src='/images/projects/music_notes_2.png'
+          <ProjectItem2 src='/images/projects-section/music_notes_2.png'
                         link='https://github.com/romtrost/Music-Genre-Classification'
                         name="Music Genre Classifier"
                         tools="Python - PyTorch - TensorFlow - Librosa"
@@ -103,7 +103,7 @@ function ContentSection() {
                                       For the core of our analysis, we implemented a CNN in TensorFlow, drawing inspiration from existing research papers to design the network architecture. 
                                       This CNN was then trained using an Adam optimizer for hyperparameter optimization, with a focus on achieving the best model fit, using a sparse categorical cross-entropy loss function."
                         description3="The CNN trained on 3-channel mel spectrograms achieved an accuracy of 92%."/>
-          <ProjectItem1 src='/images/projects/computers.png'
+          <ProjectItem1 src='/images/projects-section/computers.png'
                         link='https://github.com/romtrost/personal-website'
                         name="Personal Website"
                         tools="JavaScript - HTML - React - DALL·E 2"
@@ -113,7 +113,7 @@ function ContentSection() {
                                       While drawing inspiration from other websites, I aimed to give my website a unique and cohesive theme by generating all its images using DALL·E 2.
                                       Additionally, I incorporated the Framer Motion library to add captivating animations to the various web components, enhancing the website's interactivity and liveliness."
                         description3="This website remains a continuous work in progress, as I intend to further refine my web development skills and feature new, exciting projects."/>
-          <ProjectItem2 src='/images/projects/CPUs.png'
+          <ProjectItem2 src='/images/projects-section/CPUs.png'
                         link='https://github.com/romtrost/CPU-simulation'
                         name="CPU Simulator"
                         tools="C - MIPS - Hardware Design"
