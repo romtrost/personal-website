@@ -16,10 +16,11 @@
 }
 
 .shooting-star-generator {
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   align-items: center;
+  z-index: 0;
 }
 
 line {

@@ -23,8 +23,10 @@ function ProjectPopup(props) {
   return (props.trigger) ? (
 
     <div className='project-pop-up'>
-      <div className='close-button' onClick={() => props.setTrigger(false)}>
-        <FontAwesomeIcon icon={faTimes} size="l"/>
+      <div className='close-button-container' onClick={() => props.setTrigger(false)}>
+        <div className='close-button' >
+          <FontAwesomeIcon icon={faTimes} size="l"/>
+        </div>
       </div>
       <motion.div 
         className='project-pop-up-inner'

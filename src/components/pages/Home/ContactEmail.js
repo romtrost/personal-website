@@ -17,46 +17,49 @@ function ContactEmail(props) {
 
   return (
 
-    <a ref={ref} 
-         href="mailto:romainltrost@hotmail.com"
-         className='contact-email'
-         style ={{
-           width: '30%',
-           marginLeft: '35%',
-           marginRight: '35%',
-           display: "flex", 
-           alignItems: "center",
-           justifyContent: 'center',
-           marginTop: '30px',
-           textDecoration: 'none'}}>
-      <motion.div variants={{hidden: { y: 25, opacity: 0, scale: 1 }, visible: { y: 0, opacity: 1, scale: 1 },}}
-                  initial="hidden"
-                  animate={mainControls}
-                  transition={{
-                    duration: 0.5, 
-                    delay: 0.3, 
-                    ease: [0.1, 0.4, 0.2, 1.0]}}>
-                  <FontAwesomeIcon icon={faEnvelope} size="xl" />
-      </motion.div>
-      <motion.div style={{
-                    marginLeft: '10px',
-                    fontWeight: '400',
-                    fontSize: '20px'
-                  }}
-                  variants={{
-                    hidden: { y: 25, opacity: 0, scale: 1 },
-                    visible: { y: 0, opacity: 1, scale: 1 },
-                  }}
-                  initial="hidden"
-                  animate={mainControls}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.3,
-                    ease: [0.1, 0.4, 0.2, 1.0]
-                  }}>
-                romainltrost@hotmail.com
-      </motion.div>
-    </a>
+    <div style ={{display: "flex", alignItems: "center"}}>
+      <a ref={ref} 
+          href="mailto:romainltrost@hotmail.com"
+          className='contact-email'
+          style ={{
+            width: '30%',
+            marginLeft: '35%',
+            marginRight: '35%',
+            display: "flex", 
+            alignItems: "center",
+            justifyContent: 'center',
+            marginTop: '30px',
+            textDecoration: 'none'}}>
+        <motion.div variants={{hidden: { y: 25, opacity: 0, scale: 1 }, visible: { y: 0, opacity: 1, scale: 1 },}}
+                    initial="hidden"
+                    animate={mainControls}
+                    transition={{
+                      duration: 0.5, 
+                      delay: 0.3, 
+                      ease: [0.1, 0.4, 0.2, 1.0]}}>
+                    <FontAwesomeIcon icon={faEnvelope} size="xl" />
+        </motion.div>
+        <motion.div style={{
+                      marginLeft: '10px',
+                      fontWeight: '400',
+                      fontSize: '20px'
+                    }}
+                    variants={{
+                      hidden: { y: 25, opacity: 0, scale: 1 },
+                      visible: { y: 0, opacity: 1, scale: 1 },
+                    }}
+                    initial="hidden"
+                    animate={mainControls}
+                    transition={{
+                      duration: 0.5,
+                      delay: 0.3,
+                      ease: [0.1, 0.4, 0.2, 1.0]
+                    }}>
+                  romainltrost@hotmail.com
+        </motion.div>
+      </a>      
+    </div>
+
 
 
 

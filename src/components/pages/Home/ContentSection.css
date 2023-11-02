@@ -108,6 +108,7 @@
 }
 
 .projects-item-learn-more {
+  display: flex;
   text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -119,6 +120,7 @@
 
 .projects-item-learn-more-text {
   cursor: pointer;
+  z-index: 10;
 }
 
 .projects-item-learn-more-text:hover {
@@ -157,6 +159,7 @@
   align-items: center;
   text-align: center;
   cursor: pointer;
+  z-index: 10;
 }
 
 .project-image-container:hover {
@@ -165,7 +168,6 @@
 
 .project-image-container > img {
   object-fit: cover;
-  z-index: 10;
 }
 
 .projects-header-line {
@@ -189,6 +191,7 @@
 .linkIcon {
   color: #ff932e;
   margin-left: 20px;
+  z-index: 10;
 }
 
 .linkIcon:hover {
@@ -198,6 +201,7 @@
 
 .linkIcon-projects {
   color: #ffffff;
+  z-index: 10;
 }
 
 .linkIcon-projects:hover {
@@ -209,6 +213,7 @@
 .contact-email {
   color: #ffffff;
   cursor: pointer;
+  z-index: 10;
 }
 
 .contact-email:hover {
@@ -221,6 +226,8 @@
   color: #ff932e;
   font-weight: 400;
   text-decoration: none;
+  z-index: 10;
+  margin: 0 5px;
 }
 
 .contact-linkedin-text:hover {

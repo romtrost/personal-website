@@ -58,14 +58,8 @@ function HeroSection() {
                       A Data Scientist and Tech Enthusiast from Belgium
             </motion.p>
           </motion.div>
-          <ShootingStarGenerator 
-            backgroundY={backgroundY}
-          />
-          <StaticStarGenerator 
-            backgroundY={backgroundY}
-          />
           <motion.img
-            src='/images/header-background.jpg'
+            src='/images/header-background-no-stars.jpg'
             style={{
               y: backgroundY,
             }}
