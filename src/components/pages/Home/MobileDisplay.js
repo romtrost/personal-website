@@ -45,16 +45,16 @@ function MobileDisplay() {
             </motion.p>
           </motion.div>
           <motion.img
-            src='/images/header-background-no-stars.jpg'
+            src='/images/hero-section/header-background-no-stars.jpg'
           />
           <motion.img
-            src='/images/header-background-foreground-2.png'
+            src='/images/hero-section/header-background-foreground-2.png'
             style={{
               zIndex: 5,
             }}
           />
           <motion.img
-            src='/images/header-background-foreground.png'
+            src='/images/hero-section/header-background-foreground.png'
             style={{
               zIndex: 15,
             }}

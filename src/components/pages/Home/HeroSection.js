@@ -59,20 +59,20 @@ function HeroSection() {
             </motion.p>
           </motion.div>
           <motion.img
-            src='/images/header-background-no-stars.jpg'
+            src='/images/hero-section/header-background-no-stars.jpg'
             style={{
               y: backgroundY,
             }}
           />
           <motion.img
-            src='/images/header-background-foreground-2.png'
+            src='/images/hero-section/header-background-foreground-2.png'
             style={{
               zIndex: 5,
               y: background2Y,
             }}
           />
           <motion.img
-            src='/images/header-background-foreground.png'
+            src='/images/hero-section/header-background-foreground.png'
             style={{
               zIndex: 15,
             }}
